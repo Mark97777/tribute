@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>In Loving Memory of Okatakyie Sir Charles Ofori Kuragu | 1964 – 2026</title>
+
+	<!-- SEO -->
+	<meta name="description" content="A tribute to the life and legacy of Okatakyie Sir Charles Ofori Kuragu (1964–2026) — leader, entrepreneur, devoted family man, and servant of God.">
+
+	<!-- Favicon (tab icon) -->
+	<link rel="icon" type="image/png" href="img/photo1-page-001.png">
+	<link rel="apple-touch-icon" href="img/photo1-page-001.png">
+
+	<!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="In Loving Memory of Okatakyie Sir Charles Ofori Kuragu | 1964 – 2026">
+	<meta property="og:description" content="A life of excellence, faith & service. Join us in celebrating his legacy.">
+	<meta property="og:image" content="img/photo1-page-001.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:url" content="https://yourdomain.com/">
+
+	<!-- Twitter / X -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="In Loving Memory of Okatakyie Sir Charles Ofori Kuragu">
+	<meta name="twitter:description" content="A life of excellence, faith & service. 1964 – 2026.">
+	<meta name="twitter:image" content="img/photo1-page-001.png">
+
+	<!-- Tailwind + fonts (unchanged) -->
+	<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        gold:   { light:'#e8c97a', DEFAULT:'#c9a24b', dark:'#a07f2e' },
+        cream:  { light:'#fdfaf3', DEFAULT:'#f5efe2' },
+        ink:    { DEFAULT:'#1c1a17', soft:'#3a372f' },
+        ghgreen:{ DEFAULT:'#006b3f' },
+      },
+      fontFamily: {
+        serif: ['"Cormorant Garamond"','Georgia','serif'],
+        sans:  ['Inter','system-ui','sans-serif'],
+      }
+    }
+  }
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  body { font-family:'Inter',sans-serif; background:#fdfaf3; color:#1c1a17; }
+  .display-font { font-family:'Cormorant Garamond', Georgia, serif; }
+  .gold-rule { height:1px; background:linear-gradient(90deg,transparent,#c9a24b,transparent); }
+  .page { display:none; animation:fadeIn .5s ease; }
+  .page.active { display:block; }
+  @keyframes fadeIn { from{opacity:0; transform:translateY(8px);} to{opacity:1; transform:none;} }
+  .nav-link { position:relative; }
+  .nav-link::after { content:''; position:absolute; left:0; bottom:-4px; width:0; height:2px; background:#c9a24b; transition:width .3s; }
+  .nav-link:hover::after, .nav-link.active::after { width:100%; }
+  .nav-link.active { color:#c9a24b; }
+  .photo-card { transition:transform .35s ease, box-shadow .35s ease; cursor:pointer; }
+  .photo-card:hover { transform:translateY(-6px) scale(1.02); box-shadow:0 20px 40px -12px rgba(28,26,23,.25); }
+  .tree-node { transition:transform .3s, box-shadow .3s; }
+  .tree-node:hover { transform:translateY(-4px); box-shadow:0 12px 28px -10px rgba(28,26,23,.3); }
+  .tribute-card { transition:transform .3s, box-shadow .3s; }
+  .tribute-card:hover { transform:translateY(-4px); box-shadow:0 16px 36px -14px rgba(28,26,23,.22); }
+  .modal { backdrop-filter: blur(6px); }
+  .modal.hidden { display:none; }
+  .video-thumb { cursor:pointer; transition:transform .3s; }
+  .video-thumb:hover { transform:scale(1.03); }
+  .copy-btn { transition:background .25s, color .25s; }
+  .copy-btn.copied { background:#c9a24b !important; color:#fff !important; }
+  .candle { animation:flicker 2.4s ease-in-out infinite; }
+  @keyframes flicker { 0%,100%{opacity:1; transform:scale(1);} 50%{opacity:.85; transform:scale(.96);} }
+  .float-in { animation:fadeIn .7s ease both; }
+  .hero-bg { background:
+      radial-gradient(ellipse at 20% 20%, rgba(201,162,75,.14), transparent 50%),
+      radial-gradient(ellipse at 80% 80%, rgba(0,107,63,.10), transparent 50%),
+      linear-gradient(180deg,#fdfaf3 0%,#f5efe2 100%); }
+  .gh-stripe { height:4px; background:linear-gradient(90deg,#ce1126 0 33%,#fcd116 33% 66%,#006b3f 66% 100%); }
+  ::-webkit-scrollbar { width:10px; }
+  ::-webkit-scrollbar-track { background:#f5efe2; }
+  ::-webkit-scrollbar-thumb { background:#c9a24b; border-radius:8px; }
+  @media (max-width:768px){ .tree-line { display:none; } }
+  .verse-quote { position:relative; }
+  .verse-quote::before { content:'\201C'; font-family:'Cormorant Garamond',serif; font-size:3rem; color:#c9a24b; position:absolute; left:-5px; top:-18px; line-height:1; }
+</style>
+</head>
+<body>
+
+<div class="gh-stripe"></div>
+
+<!-- ══════════════ NAVIGATION ══════════════ -->
+<header class="sticky top-0 z-40 bg-cream-light/90 backdrop-blur border-b border-gold/30">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+    <button onclick="showPage('home')" class="flex items-center gap-3 text-left">
+      <div class="w-10 h-10 rounded-full bg-gold text-white flex items-center justify-center font-serif font-semibold text-sm select-none"><img class = "w-20 rounded-full" src="img/photo 25-page-001.png" /></div>
+      <div>
+        <p class="font-serif font-semibold leading-tight text-sm md:text-base">Okatakyie Sir Charles Ofori Kuragu</p>
+        <p class="text-[11px] tracking-[.2em] text-gold-dark uppercase">In Loving Memory · 1964–2026</p>
+      </div>
+    </button>
+    <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
+      <button class="nav-link active" data-page="home" onclick="showPage('home')">Home</button>
+      <button class="nav-link" data-page="family" onclick="showPage('family')">Family</button>
+      <button class="nav-link" data-page="remembrance" onclick="showPage('remembrance')">Remembrance</button>
+      <button class="nav-link" data-page="photos" onclick="showPage('photos')">Photo Gallery</button>
+      <!-- <button style = "display: none;" class="nav-link" data-page="videos" onclick="showPage('videos')">Video Gallery</button>-->
+      <button class="nav-link" data-page="donations" onclick="showPage('donations')">Donations</button>
+    </nav>
+    <button id="mobileBtn" class="md:hidden p-2" aria-label="Menu">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <div id="mobileMenu" class="hidden md:hidden border-t border-gold/30 bg-cream-light px-4 py-3 space-y-1 text-sm font-medium">
+    <button class="block w-full text-left py-2 nav-link active" data-page="home" onclick="showPage('home')">Home</button>
+    <button class="block w-full text-left py-2 nav-link" data-page="family" onclick="showPage('family')">Family</button>
+    <button class="block w-full text-left py-2 nav-link" data-page="remembrance" onclick="showPage('remembrance')">Remembrance</button>
+    <button class="block w-full text-left py-2 nav-link" data-page="photos" onclick="showPage('photos')">Photo Gallery</button>
+    <!--<button class="block w-full text-left py-2 nav-link" data-page="videos" onclick="showPage('videos')">Video Gallery</button>-->
+    <button class="block w-full text-left py-2 nav-link" data-page="donations" onclick="showPage('donations')">Donations</button>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4">
+
+<!-- ══════════════ PAGE: HOME ══════════════ -->
+<section id="page-home" class="page active">
+  <div class="hero-bg -mx-4 px-4 py-16 md:py-24 text-center rounded-b-3xl">
+    <div class="candle inline-block text-5xl mb-6 select-none">🕯️</div>
+    <p class="text-xs md:text-sm tracking-[.35em] uppercase text-gold-dark mb-4">In Loving Memory Of</p>
+    <h1 class="display-font text-4xl md:text-6xl lg:text-7xl font-medium mb-4">Okatakyie Sir Charles<br class="md:hidden"> Ofori Kuragu</h1>
+    <p class="display-font italic text-xl md:text-2xl text-ink-soft mb-2">"I have fought the good fight, I have finished the race, I have kept the faith."</p>
+    <p class="text-xs uppercase tracking-[.2em] text-gold-dark">— 2 Timothy 4:7</p>
+    <p class="text-sm md:text-base text-ink-soft mt-4">March 31, 1964 &nbsp;·&nbsp; — &nbsp;·&nbsp; February 2026</p>
+    <div class="gold-rule w-40 mx-auto my-8"></div>
+    <div class="flex flex-wrap justify-center gap-4">
+      <button onclick="showPage('remembrance')" class="bg-gold hover:bg-gold-dark text-white px-6 py-3 rounded-full text-sm font-semibold transition">Share a Tribute</button>
+      <button onclick="showPage('photos')" class="border border-gold text-gold-dark hover:bg-gold hover:text-white px-6 py-3 rounded-full text-sm font-semibold transition">View Photo Gallery</button>
+    </div>
+  </div>
+
+  <!-- Portrait -->
+  <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 py-16 md:py-20">
+    <div class="shrink-0">
+      <div class="w-56 h-72 md:w-72 md:h-96 rounded-2xl bg-gradient-to-br from-gold-light via-gold to-ghgreen flex items-center justify-center shadow-2xl rotate-[-2deg]">
+		<img style = "width: 100%;height: 100%;" src="img/photo1-page-001.png"/>
+        <span style = "display: none;" class="display-font text-6xl md:text-7xl text-white/90 font-medium select-none text-center leading-tight">Sir<br>Charles</span>
+      </div>
+      <p class="text-center text-xs text-ink-soft mt-3 italic">Replace with a favourite portrait photo</p>
+    </div>
+    <div class="float-in">
+      <h2 class="display-font text-3xl md:text-4xl font-semibold mb-4">A Life of Excellence, Faith &amp; Service</h2>
+      <p class="text-ink-soft leading-relaxed mb-4">Okatakyie Sir Charles Ofori Kuragu was a distinguished leader, entrepreneur, devoted family man, and faithful servant of God whose life was defined by excellence, integrity, and service to humanity. The fourth of twelve children born to the late Mr. Daniel Akwasi Ofori Kuragu and Madam Ama Kwaah, he carried his name — given by Mr. Leslie Mensah and caught on "like wildfire" — with quiet nobility, innate dignity, and profound grace.</p>
+      <p class="text-ink-soft leading-relaxed mb-4">From the classrooms of Tetrem and Opoku Ware School to KNUST, DePaul University in Chicago, the boardrooms of AT&amp;T, and the halls of the Kofi Annan Centre of Excellence in ICT, Sir Charles built institutions and people with equal care. He co-founded ICON360 and Build2Last, helped lead St. Georges International School, served as Financial Secretary of Christ's Oasis Ministries, and championed education for the less privileged.</p>
+      <p class="text-ink-soft leading-relaxed mb-6">A natural peacemaker and unifier — fondly called the "Prime Minister" of Oasis, "Alhaji" by his schoolmates, and "Mr. Responsible" by his beloved wife — he approached every situation with fairness, patience, and discernment. His legacy lives on in the House of Dominion, the businesses he built, and the countless lives he touched.</p>
+      <div class="grid grid-cols-3 gap-4 text-center">
+        <div class="bg-white rounded-xl p-4 shadow-sm border border-gold/20"><p class="display-font text-2xl md:text-3xl font-semibold text-gold-dark">61</p><p class="text-xs uppercase tracking-wider text-ink-soft mt-1">Years of Life</p></div>
+        <div class="bg-white rounded-xl p-4 shadow-sm border border-gold/20"><p class="display-font text-2xl md:text-3xl font-semibold text-gold-dark">4</p><p class="text-xs uppercase tracking-wider text-ink-soft mt-1">Children</p></div>
+        <div class="bg-white rounded-xl p-4 shadow-sm border border-gold/20"><p class="display-font text-2xl md:text-3xl font-semibold text-gold-dark">12</p><p class="text-xs uppercase tracking-wider text-ink-soft mt-1">Siblings</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Timeline -->
+  <div class="py-8 md:py-12">
+    <h2 class="display-font text-3xl md:text-4xl font-semibold text-center mb-2">Journey Through the Years</h2>
+    <p class="text-center text-ink-soft mb-10 italic display-font">Milestones of a remarkable life</p>
+    <div class="relative border-l-2 border-gold/40 ml-4 md:ml-8 space-y-10 pl-8 md:pl-12">
+      <div class="relative"><span class="absolute -left-[41px] md:-left-[57px] top-1 w-4 h-4 rounded-full bg-gold ring-4 ring-gold/20"></span>
+        <p class="text-gold-dark font-semibold text-sm">1964</p><h3 class="font-serif text-xl font-semibold">A Star is Born</h3>
+        <p class="text-ink-soft text-sm mt-1">Born on March 31st — the fourth of twelve children, and the first son of Daniel Akwasi Ofori Kuragu and Madam Ama Kwaah.</p></div>
+      <div class="relative"><span class="absolute -left-[41px] md:-left-[57px] top-1 w-4 h-4 rounded-full bg-gold ring-4 ring-gold/20"></span>
+        <p class="text-gold-dark font-semibold text-sm">1983 – 1985</p><h3 class="font-serif text-xl font-semibold">Foundations of Learning</h3>
+        <p class="text-ink-soft text-sm mt-1">Completed secondary education at Tetrem Secondary School (1983), then sixth form at Opoku Ware Secondary School, OWASS (1985).</p></div>
+      <div class="relative"><span class="absolute -left-[41px] md:-left-[57px] top-1 w-4 h-4 rounded-full bg-gold ring-4 ring-gold/20"></span>
+        <p class="text-gold-dark font-semibold text-sm">1990</p><h3 class="font-serif text-xl font-semibold">KNUST &amp; a Lifelong Love</h3>
+        <p class="text-ink-soft text-sm mt-1">Earned a BSc in Planning from KNUST as a proud member of Republic Hall — where a blind date with Nana Konadu led to his words: <em>"I want to marry you."</em></p></div>
+      <div class="relative"><span class="absolute -left-[41px] md:-left-[57px] top-1 w-4 h-4 rounded-full bg-gold ring-4 ring-gold/20"></span>
+        <p class="text-gold-dark font-semibold text-sm">1994</p><h3 class="font-serif text-xl font-semibold">A Sacred Union</h3>
+        <p class="text-ink-soft text-sm mt-1">Married the love of his life, Nana Konadu. Their union was blessed with twins Aaron and Audrey, and later Charles Jr. and Benjamin.</p></div>
+      <div class="relative"><span class="absolute -left-[41px] md:-left-[57px] top-1 w-4 h-4 rounded-full bg-gold ring-4 ring-gold/20"></span>
+        <p class="text-gold-dark font-semibold text-sm">1997</p><h3 class="font-serif text-xl font-semibold">Called to Serve God's House</h3>
+        <p class="text-ink-soft text-sm mt-1">Joined Christ's Oasis Ministries in Chicago, where he faithfully served as Financial Secretary until his passing — helping build the House of Dominion.</p></div>
+      <div class="relative"><span class="absolute -left-[41px] md:-left-[57px] top-1 w-4 h-4 rounded-full bg-gold ring-4 ring-gold/20"></span>
+        <p class="text-gold-dark font-semibold text-sm">1990s – 2000s</p><h3 class="font-serif text-xl font-semibold">A Transatlantic Career</h3>
+        <p class="text-ink-soft text-sm mt-1">MBA from DePaul University; rose from Regional Financial &amp; Budget Analyst to Business Operations Manager at AT&amp;T; Vice President of Symtek Telecom Inc.</p></div>
+      <div class="relative"><span class="absolute -left-[41px] md:-left-[57px] top-1 w-4 h-4 rounded-full bg-gold ring-4 ring-gold/20"></span>
+        <p class="text-gold-dark font-semibold text-sm">2003</p><h3 class="font-serif text-xl font-semibold">Serving the Homeland</h3>
+        <p class="text-ink-soft text-sm mt-1">Returned to Ghana as the first Director of Finance &amp; Administration of the Kofi Annan Centre of Excellence in ICT — also serving as acting CEO in its formative years.</p></div>
+      <div class="relative"><span class="absolute -left-[41px] md:-left-[57px] top-1 w-4 h-4 rounded-full bg-gold ring-4 ring-gold/20"></span>
+        <p class="text-gold-dark font-semibold text-sm">2000s – 2020s</p><h3 class="font-serif text-xl font-semibold">The Visionary Entrepreneur</h3>
+        <p class="text-ink-soft text-sm mt-1">Co-owned ICON360 (telecom) and Build2Last (construction) with Opanin Kwaku Oware Banin, and co-managed St. Georges International School, Kumasi, with his wife.</p></div>
+      <div class="relative"><span class="absolute -left-[41px] md:-left-[57px] top-1 w-4 h-4 rounded-full bg-gold ring-4 ring-gold/20"></span>
+        <p class="text-gold-dark font-semibold text-sm">2026</p><h3 class="font-serif text-xl font-semibold">Called Home</h3>
+        <p class="text-ink-soft text-sm mt-1">After seven weeks of illness — surrounded by his wife, family, and prayer — Sir Charles departed peacefully to be with the Lord, in February 2026.</p></div>
+    </div>
+  </div>
+
+  <!-- Roles he played -->
+  <div class="py-8">
+    <h2 class="display-font text-3xl md:text-4xl font-semibold text-center mb-10">The Many Hats He Wore</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-white rounded-xl border border-gold/25 shadow-sm p-5 text-center"><div class="text-3xl mb-2">👨‍👩‍👧‍👦</div><p class="font-serif font-semibold">Husband &amp; Father</p><p class="text-xs text-ink-soft mt-1">"Mr. Responsible" — provider, pillar, confidant</p></div>
+      <div class="bg-white rounded-xl border border-gold/25 shadow-sm p-5 text-center"><div class="text-3xl mb-2">💼</div><p class="font-serif font-semibold">Executive &amp; Entrepreneur</p><p class="text-xs text-ink-soft mt-1">AT&amp;T, Symtek, ICON360, Build2Last, St. Georges</p></div>
+      <div class="bg-white rounded-xl border border-gold/25 shadow-sm p-5 text-center"><div class="text-3xl mb-2">⛪</div><p class="font-serif font-semibold">Servant of God</p><p class="text-xs text-ink-soft mt-1">Financial Secretary, Christ's Oasis Ministries</p></div>
+      <div class="bg-white rounded-xl border border-gold/25 shadow-sm p-5 text-center"><div class="text-3xl mb-2">🌍</div><p class="font-serif font-semibold">Community Leader</p><p class="text-xs text-ink-soft mt-1">Akatakyie President, Tetremman VP, mentor to many</p></div>
+    </div>
+  </div>
+
+  <!-- Funeral details -->
+  <div class="bg-ink text-cream-light rounded-3xl p-8 md:p-12 my-12 text-center">
+    <p class="text-xs tracking-[.3em] uppercase text-gold-light mb-3">Celebration of Life</p>
+    <h2 class="display-font text-3xl md:text-4xl font-semibold mb-6">Funeral Service Details</h2>
+    <div class="grid md:grid-cols-3 gap-6 text-sm">
+      <div class="bg-white/5 rounded-xl p-5"><p class="text-gold-light mb-1">🕊️ Service</p><p class="display-font text-lg">To Be Announced</p><p class="text-cream-light/70">Christ's Oasis Ministries</p></div>
+      <div class="bg-white/5 rounded-xl p-5"><p class="text-gold-light mb-1">🌿 Interment</p><p class="display-font text-lg">Tetrem, Ashanti Region</p><p class="text-cream-light/70">His beloved hometown</p></div>
+      <div class="bg-white/5 rounded-xl p-5"><p class="text-gold-light mb-1">🍽️ Reception</p><p class="display-font text-lg">Family Residence</p><p class="text-cream-light/70">All are welcome</p></div>
+    </div>
+    <button onclick="showPage('donations')" class="mt-8 border border-gold-light text-gold-light hover:bg-gold-light hover:text-ink px-6 py-3 rounded-full text-sm font-semibold transition">Support the Family →</button>
+  </div>
+</section>
+
+<!-- ══════════════ PAGE: FAMILY ══════════════ -->
+<section id="page-family" class="page py-12 md:py-16">
+  <div class="text-center mb-12">
+    <p class="text-xs tracking-[.35em] uppercase text-gold-dark mb-2">Roots &amp; Branches</p>
+    <h1 class="display-font text-4xl md:text-5xl font-semibold">The Ofori Kuragu Family Lineage</h1>
+    <div class="gold-rule w-40 mx-auto mt-6"></div>
+  </div>
+
+  <div class="text-center mb-4"><span class="text-xs uppercase tracking-widest bg-gold/15 text-gold-dark px-4 py-1 rounded-full">Generation I · His Parents</span></div>
+  <div class="flex flex-wrap justify-center gap-6 mb-2">
+    <div class="tree-node bg-white rounded-2xl p-6 w-64 text-center border border-gold/25 shadow-sm">
+      <div class="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-gold-light to-gold flex items-center justify-center text-white font-serif text-2xl mb-3">DO</div>
+      <h3 class="font-serif font-semibold text-lg">Mr. Daniel Akwasi Ofori Kuragu</h3>
+      <p class="text-xs text-ink-soft">Late · d. 2000</p><p class="text-sm text-ink-soft mt-1 italic">Patriarch &amp; Father</p>
+    </div>
+    <div class="tree-node bg-white rounded-2xl p-6 w-64 text-center border border-gold/25 shadow-sm">
+      <div class="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-gold-light to-gold flex items-center justify-center text-white font-serif text-2xl mb-3">AK</div>
+      <h3 class="font-serif font-semibold text-lg">Madam Ama Kwaah</h3>
+      <p class="text-xs text-ink-soft">"Maame Ama" · Living</p><p class="text-sm text-ink-soft mt-1 italic">Matriarch &amp; Mother</p>
+    </div>
+  </div>
+  <p class="text-center text-sm text-ink-soft italic mb-2">Parents of twelve children — Sir Charles was the fourth child and first son</p>
+  <div class="tree-line w-px h-10 bg-gold/40 mx-auto"></div>
+
+  <div class="text-center mb-4"><span class="text-xs uppercase tracking-widest bg-gold/15 text-gold-dark px-4 py-1 rounded-full">Generation II</span></div>
+  <div class="flex flex-wrap justify-center gap-6">
+    <div class="tree-node bg-white rounded-2xl p-6 w-64 text-center border-2 border-gold shadow-md">
+      <div class="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-gold to-gold-dark flex items-center justify-center text-white font-serif text-2xl mb-3"><img class = "w-20 h-20 rounded-full" src="img/photo 25-page-001.png" /></div>
+      <h3 class="font-serif font-semibold text-lg">Okatakyie Sir Charles Ofori Kuragu <span class="text-gold-dark">✝</span></h3>
+      <p class="text-xs text-ink-soft">March 31, 1964 – February 2026</p><p class="text-sm text-ink-soft mt-1 italic">"Kofi Duro" · "Alhaji" · "Sir Charles"</p>
+    </div>
+    <div class="tree-node bg-white rounded-2xl p-6 w-64 text-center border border-gold/25 shadow-sm">
+      <div class="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-gold-light to-gold flex items-center justify-center text-white font-serif text-2xl mb-3"><img class = "w-20 h-20 rounded-full" src="img/photo wife.png" /></div>
+      <h3 class="font-serif font-semibold text-lg">Mrs. Adwoa Konadu Ofori-Kuragu</h3>
+      <p class="text-xs text-ink-soft">"Nana Konadu"</p><p class="text-sm text-ink-soft mt-1 italic">Beloved Wife of 32 Years · m. 1994</p>
+    </div>
+  </div>
+  <div class="tree-line w-px h-10 bg-gold/40 mx-auto"></div>
+
+  <div class="text-center mb-4"><span class="text-xs uppercase tracking-widest bg-gold/15 text-gold-dark px-4 py-1 rounded-full">Generation III · Children</span></div>
+  <div class="flex flex-wrap justify-center gap-6">
+    <div class="tree-node bg-white rounded-2xl p-5 w-56 text-center border border-gold/25 shadow-sm">
+      <div class="w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-gold-light to-gold flex items-center justify-center text-white font-serif text-xl mb-2">AO</div>
+      <h3 class="font-serif font-semibold">Aaron Ofori-Kuragu</h3><p class="text-xs text-ink-soft mt-1">"Atta Panin" · Firstborn Twin (Son)</p>
+    </div>
+    <div class="tree-node bg-white rounded-2xl p-5 w-56 text-center border border-gold/25 shadow-sm">
+      <div class="w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-gold-light to-gold flex items-center justify-center text-white font-serif text-xl mb-2">AO</div>
+      <h3 class="font-serif font-semibold">Audrey Ofori-Kuragu</h3><p class="text-xs text-ink-soft mt-1">"Ataa Kakra" · Firstborn Twin (Daughter)</p>
+    </div>
+    <div class="tree-node bg-white rounded-2xl p-5 w-56 text-center border border-gold/25 shadow-sm">
+      <div class="w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-gold-light to-gold flex items-center justify-center text-white font-serif text-xl mb-2">CO</div>
+      <h3 class="font-serif font-semibold">Charles Ofori-Kuragu Jr.</h3><p class="text-xs text-ink-soft mt-1">"Chuck" · Third Child (Son)</p>
+    </div>
+    <div class="tree-node bg-white rounded-2xl p-5 w-56 text-center border border-gold/25 shadow-sm">
+      <div class="w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-gold-light to-gold flex items-center justify-center text-white font-serif text-xl mb-2">BO</div>
+      <h3 class="font-serif font-semibold">Benjamin Ofori-Kuragu</h3><p class="text-xs text-ink-soft mt-1">"Yaw Barima Bonsu" · Last Son</p>
+    </div>
+  </div>
+
+  <div class="bg-white rounded-2xl border border-gold/25 shadow-sm p-6 md:p-8 mt-12 max-w-3xl mx-auto">
+    <h2 class="font-serif text-2xl font-semibold mb-3 text-center">His Extended Family</h2>
+    <p class="text-sm text-ink-soft leading-relaxed text-center">Eleven siblings — <em>"Bra Charles," "Kofi," "Abrantee"</em> — and a wide circle of nephews and nieces who called him <em>"Wofa pa"</em> (good uncle). When their father passed in 2000, he stepped into the role of both father and brother without hesitation, living by his words: <strong class="text-gold-dark">"No one is left behind in this family."</strong> His cousins, including Nana Serwaah Wiafe whom he called his little sister, and adopted family like Joycelin ("Araba"), knew him as a constant, safe presence for over 30 years.</p>
+  </div>
+</section>
+
+<!-- ══════════════ PAGE: REMEMBRANCE ══════════════ -->
+<section id="page-remembrance" class="page py-12 md:py-16">
+  <div class="text-center mb-10">
+    <p class="text-xs tracking-[.35em] uppercase text-gold-dark mb-2">Words From the Heart</p>
+    <h1 class="display-font text-4xl md:text-5xl font-semibold">Remembrance &amp; Tributes</h1>
+    <div class="gold-rule w-40 mx-auto mt-6"></div>
+  </div>
+
+  <div class="bg-white rounded-2xl border border-gold/25 shadow-sm p-6 md:p-8 mb-12">
+    <h2 class="font-serif text-2xl font-semibold mb-1">Leave a Tribute</h2>
+    <p class="text-sm text-ink-soft mb-5">Share your memories, prayers, and messages of comfort. Tributes appear instantly below.</p>
+    <form id="tributeForm" class="space-y-4">
+      <div class="grid md:grid-cols-2 gap-4">
+        <input id="tName" required placeholder="Your name" class="w-full border border-gold/30 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-gold/50 bg-cream-light">
+        <select id="tRelation" class="w-full border border-gold/30 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-gold/50 bg-cream-light text-ink-soft">
+          <option>Family</option><option>Widow / Widower</option><option>Child</option><option>Sibling</option><option>Friend</option><option>Church Member</option><option>Colleague / Business Partner</option><option>Schoolmate / Alumni</option><option>Community Member</option><option>Other</option>
+        </select>
+      </div>
+      <textarea id="tMessage" required rows="4" placeholder="Your tribute…" class="w-full border border-gold/30 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-gold/50 bg-cream-light"></textarea>
+      <div class="flex items-center justify-between flex-wrap gap-3">
+        <label class="flex items-center gap-2 text-sm text-ink-soft"><input id="tCandle" type="checkbox" class="accent-gold w-4 h-4"> Light a virtual candle 🕯️</label>
+        <button type="submit" class="bg-gold hover:bg-gold-dark text-white px-6 py-3 rounded-full text-sm font-semibold transition">Post Tribute</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="flex items-center justify-between mb-6 flex-wrap gap-2">
+    <h2 class="font-serif text-2xl font-semibold">Tributes <span id="tributeCount" class="text-gold-dark text-lg"></span></h2>
+    <span id="candleCount" class="text-sm text-ink-soft"></span>
+  </div>
+  <div id="tributeList" class="grid md:grid-cols-2 gap-6"></div>
+</section>
+
+<!-- ══════════════ PAGE: PHOTOS ══════════════ -->
+<section id="page-photos" class="page py-12 md:py-16">
+  <div class="text-center mb-10">
+    <p class="text-xs tracking-[.35em] uppercase text-gold-dark mb-2">Moments We Cherish</p>
+    <h1 class="display-font text-4xl md:text-5xl font-semibold">Photo Gallery</h1>
+    <div class="gold-rule w-40 mx-auto mt-6"></div>
+    <p class="text-sm text-ink-soft mt-4 italic">Click any photo to view it larger. Replace the placeholders with real photos of Sir Charles.</p>
+  </div>
+  <div id="photoGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5"></div>
+</section>
+
+<!-- ══════════════ PAGE: VIDEOS ══════════════ -->
+<section id="page-videos" class="page py-12 md:py-16">
+  <div class="text-center mb-10">
+    <p class="text-xs tracking-[.35em] uppercase text-gold-dark mb-2">Moving Memories</p>
+    <h1 class="display-font text-4xl md:text-5xl font-semibold">Video Gallery</h1>
+    <div class="gold-rule w-40 mx-auto mt-6"></div>
+    <p class="text-sm text-ink-soft mt-4 italic">Click a video to play. Swap the placeholder links for your own hosted videos.</p>
+  </div>
+  <div id="videoGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+</section>
+
+<!-- ══════════════ PAGE: DONATIONS ══════════════ -->
+<section id="page-donations" class="page py-12 md:py-16">
+  <div class="text-center mb-4">
+    <p class="text-xs tracking-[.35em] uppercase text-gold-dark mb-2">Support the Family</p>
+    <h1 class="display-font text-4xl md:text-5xl font-semibold">Donations &amp; Contributions</h1>
+    <div class="gold-rule w-40 mx-auto mt-6"></div>
+    <p class="text-ink-soft mt-5 max-w-2xl mx-auto leading-relaxed">The family is deeply grateful for every expression of love. If you wish to support the funeral arrangements or honour Sir Charles's passion for educating less-privileged children, please use any of the accounts below. Tap to copy an account number.</p>
+  </div>
+
+  <div class="max-w-2xl mx-auto bg-white rounded-2xl border border-gold/25 shadow-sm p-6 my-10">
+    <div class="flex justify-between text-sm font-medium mb-2"><span>Sir Charles Educational Fund for Less-Privileged Children</span></div>
+    <div class="w-full bg-cream rounded-full h-3 overflow-hidden"><div class="h-3 bg-gradient-to-r from-gold-light to-gold rounded-full" style="width:35%"></div></div>
+    <p class="text-xs text-ink-soft mt-2">A cause very close to his heart — a dream he shared with his friend Peter Asiedu (AKI-OLA Series) that the family is determined to fulfil.</p>
+  </div>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="donationGrid"></div>
+
+  <div class="bg-ink text-cream-light rounded-3xl p-8 md:p-10 mt-12 text-center">
+    <h2 class="display-font text-2xl md:text-3xl font-semibold mb-3">Other Ways to Help</h2>
+    <p class="text-cream-light/80 text-sm max-w-xl mx-auto leading-relaxed mb-6">Your presence, prayers, and kind words mean the world to the family. Meals, flowers, and volunteer help for the reception are also warmly welcomed — please contact <span class="text-gold-light">Mrs. Adwoa Konadu Ofori-Kuragu</span> or the family via the Ofori-Kuragu family channels.</p>
+    <p class="display-font italic text-lg text-gold-light">"God is not unjust to forget your work and labor of love." — Hebrews 6:10</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="mt-16 bg-ink text-cream-light/80 text-center py-10">
+  <div class="gh-stripe w-24 mx-auto mb-6 rounded-full"></div>
+  <div class="w-10 h-10 mx-auto rounded-full bg-gold text-white flex items-center justify-center font-serif mb-3 select-none"><img class = "w-20 rounded-full" src="img/photo 25-page-001.png" /></div>
+  <p class="display-font text-xl text-cream-light mb-1">Okatakyie Sir Charles Ofori Kuragu</p>
+  <p class="text-xs tracking-[.25em] uppercase text-gold-light mb-3">1964 — 2026 · Da Yie, Nante Yie</p>
+  <p class="text-xs">With love, from the Ofori-Kuragu family · Christ's Oasis Ministries · Akatakyie · Tetremman Association</p>
+</footer>
+
+<!-- Modals -->
+<div id="photoModal" class="modal hidden fixed inset-0 z-50 bg-ink/90 flex items-center justify-center p-4" onclick="if(event.target===this)closePhoto()">
+  <button onclick="closePhoto()" class="absolute top-5 right-6 text-white/80 hover:text-white text-3xl leading-none" aria-label="Close">&times;</button>
+  <div class="max-w-3xl w-full text-center">
+    <div id="photoModalBody" class="rounded-2xl overflow-hidden shadow-2xl mx-auto max-h-[75vh] flex items-center justify-center"></div>
+    <p id="photoModalCaption" class="text-cream-light mt-4 display-font text-xl italic"></p>
+  </div>
+</div>
+
+<div id="videoModal" class="modal hidden fixed inset-0 z-50 bg-ink/95 flex items-center justify-center p-4" onclick="if(event.target===this)closeVideo()">
+  <button onclick="closeVideo()" class="absolute top-5 right-6 text-white/80 hover:text-white text-3xl leading-none" aria-label="Close">&times;</button>
+  <div class="w-full max-w-3xl">
+    <div id="videoModalBody" class="rounded-2xl overflow-hidden shadow-2xl bg-black aspect-video"></div>
+    <p id="videoModalCaption" class="text-cream-light mt-4 display-font text-xl italic text-center"></p>
+  </div>
+</div>
+
+<script>
+function showPage(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById('page-'+id).classList.add('active');
+  document.querySelectorAll('.nav-link').forEach(l=>l.classList.toggle('active', l.dataset.page===id));
+  document.getElementById('mobileMenu').classList.add('hidden');
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+document.getElementById('mobileBtn').addEventListener('click',()=>document.getElementById('mobileMenu').classList.toggle('hidden'));
+
+/* ── Tributes (summarized from the family's tribute document) ── */
+const tributes = [
+  {name:'Mrs. Adwoa Konadu Ofori-Kuragu', relation:'Widow', candle:true, group:'The Widow',
+   text:'My Charlie, my pillar, my everything. From the day you said "I want to marry me" on our KNUST blind date until death do us part — 32 memorable years of love, provision, and friendship. You left so soon, so suddenly, but "the Lord is my refuge and my strength." I will keep the faith, my love. Until we meet again. (Romans 8:38-39; Phil Collins\' "Against All Odds" — our song.)'},
+  {name:'Aaron, Audrey, Chuck & Benjamin', relation:'Children', candle:true, group:'The Children',
+   text:'Daddy, we never imagined saying goodbye so soon. You were our biggest supporter, our teacher, and the pillar of our family — an entrepreneur, a leader, a way maker, a man of God, and most importantly, a father. We will take up the mantle and honour your legacy in everything we say and do. Thank you for being our representation and our blueprint. Da Yie, Agya pa. We love you.'},
+  {name:'His Beloved Siblings', relation:'Siblings', candle:true, group:'The Siblings',
+   text:'When our father passed in 2000, you became both father and brother without hesitation — our backbone and anchor, making sure no one was left behind. The weekend calls, the stories of Agya Ofori with giggles and laughter, are forever on hold. Nante yie, Okatakyie. You fought the good fight and ran your race with honour. Rest well until we meet again.'},
+  {name:'The Nephews & Niece', relation:'Family', candle:false, group:'Extended Family',
+   text:'Wofa pa, you were the light through which so many lights came — the embodiment of the light of the world around you. You left no stone unturned in sacrifice for us. We mourn not as those without hope, for on the day of resurrection we shall meet again. May the angels welcome you to paradise. In heaven, continue to pray for us. Till we meet again.'},
+  {name:'Paa Kwasi', relation:'Family', candle:false, group:'Extended Family',
+   text:'"Paa nie!" — "Wofa nie!" To speak of Uncle Charlie is to speak of the man who shaped my life. My mentor and role model, he never let me settle for mediocrity; whenever I doubted, he saw potential. He was the very definition of family. This is not goodbye — simply until we meet again. Thank you for believing in me. 2 Timothy 4:7.'},
+  {name:'Nana Serwaah Wiafe', relation:'Family', candle:false, group:'Extended Family',
+   text:'In 1993 I gained a big brother — never just a cousin, but my bestie, counselor, career planner, and safe space for 30 years. You were the constant, the one who was proud of me. You fought a good fight, Bra Charles, and kept us all together with your love. I was so blessed to call you my brother. Rest well in the bosom of the Lord. Wa ma me ahumu!'},
+  {name:'Apostle Dr. Isaac Paintsil', relation:'Church', candle:true, group:'Christ\'s Oasis Ministries',
+   text:'My true twin brother, born to a different mother — our hearts knit in the God-kind of love that surpasses knowledge. From the flooded basement "baptism" in Humboldt Park to you being handcuffed in our own Oasis Center, grace always prevailed. You laid unbreakable foundations for what the Lord has accomplished. "Onward to the next assignment!" Cynthia, my family, Oasis, and I will never forget you.'},
+  {name:'Christ\'s Oasis Ministries', relation:'Church', candle:false, group:'Christ\'s Oasis Ministries',
+   text:'Sir Charles was a living sermon and an open prayer — our beloved "Prime Minister." As Financial Secretary and Board member he served without compensation, stewarding the House of Dominion and every Oasis asset with integrity and vision. He loved his family first, loved people genuinely, and bore the fruit of the Spirit abundantly. "Well done, good and faithful servant." The Oasis loves you!!!'},
+  {name:'Opoku Ware Old Students Assoc. (Chicago)', relation:'Schoolmate / Alumni', candle:false, group:'Akatakyie (AC 300)',
+   text:'To Katakyie Sir Charles Ofori Kuragu (AC 300), former President of Akatakyie-Chicago: you were more than a leader — a unifying force and proud son of Opoku Ware School. You led with vision, integrity, kindness, and a genuine concern for others, especially the young alumni. Your race is run, your work is done, and your legacy endures. Da Yie.'},
+  {name:'Opanin Kwaku Oware Banin', relation:'Colleague / Business Partner', candle:false, group:'Friends & Partners',
+   text:'My brother, my business partner, my buddy, my "body-body." You believed success meant nothing without trust, loyalty, and respect. You helped quietly without seeking praise — in a world where many take, you found joy in giving. Unto us an angel was born; unto us a saint was created. Rest peacefully, my brother. Until we meet again. Amen.'},
+  {name:'Gabriel Boateng', relation:'Friend', candle:false, group:'Friends & Partners',
+   text:'We met as teenagers in rival school colours — Prempeh vs. Opoku Ware — but the boy from the rival school became my brother for life. Roommates at 4550 North Twin Towers, colleagues at Knight Ridder, driving Yellow Cab on five dollars an hour with massive dreams. We were supposed to be on the veranda in Community 8 in 2027, watching the sun go down. I miss you, Buddy.'},
+  {name:'Tetremman Association of USA', relation:'Community Member', candle:false, group:'Community',
+   text:'Our beloved Vice President and noble son of Tetrem — a man of purpose and quiet strength who never sought recognition. Through his vision we renovated the local clinic and police station, and the community centre stands as a powerful testimony to his generous spirit. His works remain, his example endures. May Tetrem forever cherish him.'},
+  {name:'Kwadwo Owusu', relation:'Friend', candle:false, group:'Friends & Partners',
+   text:'"No man is an island." We became friends in the Asem vacation classes of \'83/84 — bonded by modest backgrounds and the Ash-Town link, calling each other "Opponent." Chef Oduro was loyal, hardworking, generous, and compassionate, quietly sponsoring the education of the less-privileged. You are loved beyond words and missed beyond measure. Rest easy, Menua pa.'},
+  {name:'The Ninjas', relation:'Friend', candle:false, group:'Friends & Partners',
+   text:'Our friendship began at Republic Hall, KNUST, and carried through every stage of life. You were easy-going, warm-hearted, and the kind of person who went the extra mile. Your greatest passion was education for poor and needy children — a cause you planted like a seed. We never got our gathering at Aki-Ola\'s residence, but your place among us can never be filled. Farewell, our loyal friend.'},
+  {name:'Tony Oppong JSC (Class of \'83 Mates)', relation:'Schoolmate / Alumni', candle:false, group:'Nokwarefo',
+   text:'"Alhaji" — a real friend who stuck closer than a brother. Never once did peer pressure move him; his baby face was almost always radiant with smile, and his sense of humour second to none. We hold to 1 Thessalonians 4:13-14: we do not grieve without hope. This is not goodbye, only a farewell until we meet again. Sleep well, our super friend.'},
+  {name:'Prudence Ughamadu, Sheila Noye & Well-Wishers', relation:'Other', candle:false, group:'Farewell Messages',
+   text:'The embodiment of grace, dignity, and class — impeccably dressed, infinitely wise, a guiding light who invested deeply in the next generation. Thank you for your selfless service to Oasis and the Kingdom. Heaven has gained what earth will dearly miss. Deepest condolences to Maa Adwoa, Aaron, Audrey, Chuck, and Ben. Rest in perfect peace.'},
+  {name:'Isaac Paintsil Jr. & Christabel Koomson', relation:'Church', candle:false, group:'Farewell Messages',
+   text:'"The Big Ike" — I can still hear your calm voice. You were one of my greatest influences in pursuing business, always impeccably dressed in your signature UK suits, pouring into the next generation. You even took time to attend my graduation party with the kindest card. This is earth\'s loss but heaven\'s gain. Rest in perfect peace, Sir.'},
+  {name:'Roland Eble & Joycelin', relation:'Friend', candle:false, group:'Farewell Messages',
+   text:'For nearly 20 years I watched your devotion to God, your boldness for the Kingdom, and your generosity toward people. You were my mentor and safe space. Kofi Duro — you never forgot my birthdays; through you Maame Ama became my mother. Damirifa due. Nyame nfa wo nsie. Till we meet again, sleep well, my dear friend.'},
+];
+let candlesLit = tributes.filter(t=>t.candle).length;
+const relIcons = {Family:'❤️','Widow / Widower':'💛',Child:'👨‍👧',Sibling:'🤝',Friend:'🌹',Church:'⛪','Colleague / Business Partner':'💼','Schoolmate / Alumni':'🎓','Community Member':'🏘️',Other:'🕊️'};
+
+function renderTributes(){
+  const list = document.getElementById('tributeList');
+  list.innerHTML = tributes.map(t=>`
+    <div class="tribute-card bg-white rounded-2xl border border-gold/25 shadow-sm p-6 flex flex-col">
+      <div class="flex items-center gap-3 mb-3">
+        <div class="w-11 h-11 rounded-full bg-gradient-to-br from-gold-light to-gold flex items-center justify-center text-white font-serif shrink-0">${t.name.split(' ').filter(w=>/[A-Za-z]/.test(w[0])).map(w=>w[0]).slice(0,2).join('').toUpperCase()}</div>
+        <div>
+          <p class="font-semibold text-sm">${t.name} ${t.candle?'<span title="Candle lit">🕯️</span>':''}</p>
+          <p class="text-xs text-gold-dark">${relIcons[t.relation]||'🌹'} ${t.group} · ${t.relation}</p>
+        </div>
+      </div>
+      <p class="text-sm text-ink-soft leading-relaxed flex-1 display-font text-[17px]">"${t.text}"</p>
+    </div>`).join('');
+  document.getElementById('tributeCount').textContent = `(${tributes.length})`;
+  document.getElementById('candleCount').textContent = `🕯️ ${candlesLit} candle${candlesLit===1?'':'s'} lit`;
+}
+document.getElementById('tributeForm').addEventListener('submit', e=>{
+  e.preventDefault();
+  const candle = document.getElementById('tCandle').checked;
+  tributes.unshift({name:document.getElementById('tName').value.trim(), relation:document.getElementById('tRelation').value, text:document.getElementById('tMessage').value.trim(), candle, group:'New Tributes'});
+  if(candle) candlesLit++;
+  renderTributes(); e.target.reset();
+  document.getElementById('tributeList').scrollIntoView({behavior:'smooth', block:'start'});
+});
+
+/* ── Photos ── */
+const photos = [
+  {label:'Daddy and Wife', year:'memory', src:'img/photo 2-page-001.png'},{label:'Daddy and Son', year:'memory', src:'img/photo children 7-page-001.png'},
+  {label:'Daddy and Son', year:'memory', src:'img/photo children 8.jpg'},{label:'Daddy and Son', year:'memory',src:'img/photo children 9.jpg'},
+  {label:'Daddy and Son', year:'memory', src:'img/photo children 6-page-001.png'},{label:'Daddy and Son', year:'memory', src:'img/photo children 2-page-001.png'},
+  {label:'Daddy and Son', year:'memory', src:'img/photo children 3-page-001.png'},{label:'Daddy and Daugther', year:'memory', src:'img/photo children 4-page-001.png'},
+  {label:'Daddy and Friends', year:'memory', src:'img/photo 8-page-001.png'},{label:'Daddy and Friend', year:'memory', src:'img/photo 40-page-001.png'},
+  {label:'Loved ones', year:'memory', src:'img/photo 41-page-001.png'},{label:'Daddy visit graduation', year:'memory', src:'img/photo 42-page-001.png'},
+  {label:'Loved ones', year:'memory', src:'img/photo 10-page-001.png'},{label:'Daddy and son', year:'memory', src:'img/photo 7-page-001.png'},
+  {label:'Loved ones', year:'memory', src:'img/photo 21-page-001.png'},{label:'Loved ones', year:'memory', src:'img/photo 27-page-001.png'},
+];
+function renderPhotos(){
+  document.getElementById('photoGrid').innerHTML = photos.map((p,i)=>{
+    const media = p.src
+      ? `<img src="${p.src}" alt="${p.label}" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+         <div class="hidden absolute inset-0 bg-gradient-to-br ${i%3===0?'from-gold-light to-gold':i%3===1?'from-[#d9c08a] to-gold-dark':'from-ghgreen/70 to-gold'} items-center justify-center">
+           <span class="display-font text-5xl text-white/60 select-none">${p.label.split(' ').map(w=>w[0]).slice(0,2).join('')}</span>
+         </div>`
+      : `<span class="display-font text-5xl text-white/60 select-none">${p.label.split(' ').map(w=>w[0]).slice(0,2).join('')}</span>`;
+
+    const bgClass = p.src ? '' : `bg-gradient-to-br ${i%3===0?'from-gold-light to-gold':i%3===1?'from-[#d9c08a] to-gold-dark':'from-ghgreen/70 to-gold'}`;
+
+    return `
+    <div class="photo-card bg-white rounded-2xl overflow-hidden border border-gold/25 shadow-sm" onclick="openPhoto(${i})">
+      <div class="aspect-[4/5] ${bgClass} flex items-center justify-center relative overflow-hidden">
+        ${media}
+        <span class="absolute bottom-2 right-3 text-white/80 text-xs font-medium bg-ink/40 px-2 py-0.5 rounded">${p.year}</span>
+      </div>
+      <p class="text-sm font-medium px-3 py-2.5 text-center truncate">${p.label}</p>
+    </div>`;
+  }).join('');
+}
+function openPhoto(i){
+  const p = photos[i];
+  const body = document.getElementById('photoModalBody');
+  if(p.src){
+    body.innerHTML = `<img src="${p.src}" alt="${p.label}" class="max-h-[75vh] w-auto object-contain rounded-2xl">`;
+  } else {
+    body.innerHTML = `
+      <div class="w-full aspect-[4/5] max-h-[75vh] bg-gradient-to-br from-gold-light to-ghgreen flex items-center justify-center">
+        <span class="display-font text-8xl text-white/50">${p.label[0]}</span>
+      </div>`;
+  }
+  document.getElementById('photoModalCaption').textContent = `${p.label} · ${p.year}`;
+  document.getElementById('photoModal').classList.remove('hidden');
+  document.body.style.overflow='hidden';
+}
+function closePhoto(){ document.getElementById('photoModal').classList.add('hidden'); document.body.style.overflow=''; }
+
+/* ── Videos ── */
+const videos = [
+  {title:'Funeral Service Live Recording', dur:'1:24:10', embed:'https://www.youtube.com/embed/dQw4w9WgXcQ'},
+  {title:'Celebration of Life Highlights', dur:'08:32', embed:'https://www.youtube.com/embed/dQw4w9WgXcQ'},
+  {title:'Family Memories Montage', dur:'05:47', embed:'https://www.youtube.com/embed/dQw4w9WgXcQ'},
+  {title:'Tribute from Christ\'s Oasis Ministries', dur:'12:03', embed:'https://www.youtube.com/embed/dQw4w9WgXcQ'},
+  {title:'60th Birthday Celebration Speech', dur:'15:22', embed:'https://www.youtube.com/embed/dQw4w9WgXcQ'},
+  {title:'Interview: His Life & Legacy', dur:'22:15', embed:'https://www.youtube.com/embed/dQw4w9WgXcQ'},
+];
+function renderVideos(){
+  document.getElementById('videoGrid').innerHTML = videos.map((v,i)=>`
+    <div class="video-thumb bg-white rounded-2xl overflow-hidden border border-gold/25 shadow-sm" onclick="openVideo(${i})">
+      <div class="aspect-video bg-gradient-to-br from-ink to-ink-soft relative flex items-center justify-center">
+        <span class="absolute inset-0 bg-gold/10"></span>
+        <div class="w-14 h-14 rounded-full bg-gold flex items-center justify-center shadow-lg relative">
+          <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <span class="absolute bottom-2 right-3 bg-ink/70 text-cream-light text-xs px-2 py-0.5 rounded">${v.dur}</span>
+      </div>
+      <p class="text-sm font-medium px-4 py-3 truncate">${v.title}</p>
+    </div>`).join('');
+}
+function openVideo(i){
+  const v = videos[i];
+  document.getElementById('videoModalBody').innerHTML = `<iframe class="w-full h-full" src="${v.embed}" title="${v.title}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+  document.getElementById('videoModalCaption').textContent = v.title;
+  document.getElementById('videoModal').classList.remove('hidden');
+  document.body.style.overflow='hidden';
+}
+function closeVideo(){
+  document.getElementById('videoModal').classList.add('hidden');
+  document.getElementById('videoModalBody').innerHTML='';
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown', e=>{ if(e.key==='Escape'){ closePhoto(); closeVideo(); } });
+
+/* ── Donations ── */
+const accounts = [
+  {bank:'Family Funeral Support — Ghana (GHS)', name:'Ofori-Kuragu Family Account', number:'0000000000', note:'Funeral arrangements & family support', icon:'🏦'},
+  {bank:'Family Funeral Support — USA (USD)', name:'Ofori-Kuragu Family Account', number:'0000000000', note:'International contributions', icon:'🌍'},
+  {bank:'Mobile Money (Ghana)', name:'Family MoMo Line', number:'+233 00 000 0000', note:'Quick mobile contributions', icon:'📱'},
+  {bank:'Zelle / Cash App (Diaspora)', name:'Family tribute email', number:'family@example.com', note:'Diaspora contributions', icon:'✉️'},
+  {bank:'Sir Charles Educational Fund', name:'In fulfilment of his dream for less-privileged children', number:'0000000000', note:'A cause very close to his heart', icon:'🎓'},
+  {bank:'Christ\'s Oasis Ministries', name:'In honour of his service to God\'s house', number:'0000000000', note:'House of Dominion & ministry projects', icon:'⛪'},
+];
+function renderDonations(){
+  document.getElementById('donationGrid').innerHTML = accounts.map(a=>`
+    <div class="bg-white rounded-2xl border border-gold/25 shadow-sm p-6 flex flex-col">
+      <div class="text-3xl mb-3">${a.icon}</div>
+      <h3 class="font-serif text-lg font-semibold">${a.bank}</h3>
+      <p class="text-sm text-ink-soft mb-1">${a.name}</p>
+      <p class="text-xs text-gold-dark italic mb-4">${a.note}</p>
+      <div class="mt-auto flex items-center gap-2 bg-cream rounded-lg px-3 py-2.5 border border-gold/20">
+        <span class="text-sm font-mono flex-1 truncate select-all">${a.number}</span>
+        <button onclick="copyAccount(this,'${a.number.replace(/'/g,"\\'")}')" class="copy-btn shrink-0 text-xs bg-ink text-cream-light px-3 py-1.5 rounded-full">Copy</button>
+      </div>
+    </div>`).join('');
+}
+function copyAccount(btn, text){
+  const done = ()=>{ btn.textContent='Copied ✓'; btn.classList.add('copied'); setTimeout(()=>{btn.textContent='Copy'; btn.classList.remove('copied');},1800); };
+  if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(text).then(done).catch(done); } else { done(); }
+}
+
+renderTributes(); renderPhotos(); renderVideos(); renderDonations();
+</script>
+</body>
+</html>

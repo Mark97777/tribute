@@ -3,10 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>In Loving Memory of Okatakyie Sir Charles Ofori Kuragu | 1964 – 2026</title>
+	<title>In Loving Memory of Okatakyie Sir Charles Ofori-Kuragu | 1964 – 2026</title>
 
 	<!-- SEO -->
-	<meta name="description" content="A tribute to the life and legacy of Okatakyie Sir Charles Ofori Kuragu (1964–2026) — leader, entrepreneur, devoted family man, and servant of God.">
+	<meta name="description" content="A tribute to the life and legacy of Okatakyie Sir Charles Ofori-Kuragu (1964–2026) — leader, entrepreneur, devoted family man, and servant of God.">
 
 	<!-- Favicon (tab icon) -->
 	<link rel="icon" type="image/png" href="img/photo1-page-001.png">
@@ -14,7 +14,7 @@
 
 	<!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="In Loving Memory of Okatakyie Sir Charles Ofori Kuragu | 1964 – 2026">
+	<meta property="og:title" content="In Loving Memory of Okatakyie Sir Charles Ofori-Kuragu | 1964 – 2026">
 	<meta property="og:description" content="A life of excellence, faith & service. Join us in celebrating his legacy.">
 	<meta property="og:image" content="img/photo1-page-001.png">
 	<meta property="og:image:width" content="1200">
@@ -23,11 +23,11 @@
 
 	<!-- Twitter / X -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="In Loving Memory of Okatakyie Sir Charles Ofori Kuragu">
+	<meta name="twitter:title" content="In Loving Memory of Okatakyie Sir Charles Ofori-Kuragu">
 	<meta name="twitter:description" content="A life of excellence, faith & service. 1964 – 2026.">
 	<meta name="twitter:image" content="img/photo1-page-001.png">
 
-	<!-- Tailwind + fonts (unchanged) -->
+	<!-- Tailwind + fonts -->
 	<script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = {
@@ -85,6 +85,19 @@ tailwind.config = {
   @media (max-width:768px){ .tree-line { display:none; } }
   .verse-quote { position:relative; }
   .verse-quote::before { content:'\201C'; font-family:'Cormorant Garamond',serif; font-size:3rem; color:#c9a24b; position:absolute; left:-5px; top:-18px; line-height:1; }
+
+  /* ── Read more / read less for tributes ── */
+  .tribute-text { position:relative; transition:max-height .45s ease; }
+  .tribute-text.collapsed { max-height:10.5rem; overflow:hidden; }
+  .tribute-text.collapsed::after {
+    content:''; position:absolute; bottom:0; left:0; right:0; height:3.5rem;
+    background:linear-gradient(180deg, rgba(255,255,255,0), #ffffff 85%);
+    pointer-events:none;
+  }
+  .tribute-text p { margin-bottom:.7rem; }
+  .tribute-text p:last-child { margin-bottom:0; }
+  .read-more-btn { transition:color .25s, background .25s; }
+  .read-more-btn:hover { color:#a07f2e; }
 </style>
 </head>
 <body>
@@ -97,7 +110,7 @@ tailwind.config = {
     <button onclick="showPage('home')" class="flex items-center gap-3 text-left">
       <div class="w-10 h-10 rounded-full bg-gold text-white flex items-center justify-center font-serif font-semibold text-sm select-none"><img class = "w-20 rounded-full" src="img/photo 25-page-001.png" /></div>
       <div>
-        <p class="font-serif font-semibold leading-tight text-sm md:text-base">Okatakyie Sir Charles Ofori Kuragu</p>
+        <p class="font-serif font-semibold leading-tight text-sm md:text-base">Okatakyie Sir Charles Ofori-Kuragu</p>
         <p class="text-[11px] tracking-[.2em] text-gold-dark uppercase">In Loving Memory · 1964–2026</p>
       </div>
     </button>
@@ -107,7 +120,7 @@ tailwind.config = {
       <button class="nav-link" data-page="remembrance" onclick="showPage('remembrance')">Remembrance</button>
       <button class="nav-link" data-page="photos" onclick="showPage('photos')">Photo Gallery</button>
       <!-- <button style = "display: none;" class="nav-link" data-page="videos" onclick="showPage('videos')">Video Gallery</button>-->
-      <button class="nav-link" data-page="donations" onclick="showPage('donations')">Donations</button>
+      <!-- <button class="nav-link" data-page="donations" onclick="showPage('donations')">Donations</button> -->
     </nav>
     <button id="mobileBtn" class="md:hidden p-2" aria-label="Menu">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -119,7 +132,7 @@ tailwind.config = {
     <button class="block w-full text-left py-2 nav-link" data-page="remembrance" onclick="showPage('remembrance')">Remembrance</button>
     <button class="block w-full text-left py-2 nav-link" data-page="photos" onclick="showPage('photos')">Photo Gallery</button>
     <!--<button class="block w-full text-left py-2 nav-link" data-page="videos" onclick="showPage('videos')">Video Gallery</button>-->
-    <button class="block w-full text-left py-2 nav-link" data-page="donations" onclick="showPage('donations')">Donations</button>
+    <!--<button class="block w-full text-left py-2 nav-link" data-page="donations" onclick="showPage('donations')">Donations</button>-->
   </div>
 </header>
 
@@ -130,13 +143,13 @@ tailwind.config = {
   <div class="hero-bg -mx-4 px-4 py-16 md:py-24 text-center rounded-b-3xl">
     <div class="candle inline-block text-5xl mb-6 select-none">🕯️</div>
     <p class="text-xs md:text-sm tracking-[.35em] uppercase text-gold-dark mb-4">In Loving Memory Of</p>
-    <h1 class="display-font text-4xl md:text-6xl lg:text-7xl font-medium mb-4">Okatakyie Sir Charles<br class="md:hidden"> Ofori Kuragu</h1>
+    <h1 class="display-font text-4xl md:text-6xl lg:text-7xl font-medium mb-4">Okatakyie Sir Charles<br class="md:hidden"> Ofori-Kuragu</h1>
     <p class="display-font italic text-xl md:text-2xl text-ink-soft mb-2">"I have fought the good fight, I have finished the race, I have kept the faith."</p>
     <p class="text-xs uppercase tracking-[.2em] text-gold-dark">— 2 Timothy 4:7</p>
     <p class="text-sm md:text-base text-ink-soft mt-4">March 31, 1964 &nbsp;·&nbsp; — &nbsp;·&nbsp; February 2026</p>
     <div class="gold-rule w-40 mx-auto my-8"></div>
     <div class="flex flex-wrap justify-center gap-4">
-      <button onclick="showPage('remembrance')" class="bg-gold hover:bg-gold-dark text-white px-6 py-3 rounded-full text-sm font-semibold transition">Share a Tribute</button>
+      <button onclick="showPage('remembrance')" class="bg-gold hover:bg-gold-dark text-white px-6 py-3 rounded-full text-sm font-semibold transition">Read the Tributes</button>
       <button onclick="showPage('photos')" class="border border-gold text-gold-dark hover:bg-gold hover:text-white px-6 py-3 rounded-full text-sm font-semibold transition">View Photo Gallery</button>
     </div>
   </div>
@@ -152,13 +165,13 @@ tailwind.config = {
     </div>
     <div class="float-in">
       <h2 class="display-font text-3xl md:text-4xl font-semibold mb-4">A Life of Excellence, Faith &amp; Service</h2>
-      <p class="text-ink-soft leading-relaxed mb-4">Okatakyie Sir Charles Ofori Kuragu was a distinguished leader, entrepreneur, devoted family man, and faithful servant of God whose life was defined by excellence, integrity, and service to humanity. The fourth of twelve children born to the late Mr. Daniel Akwasi Ofori Kuragu and Madam Ama Kwaah, he carried his name — given by Mr. Leslie Mensah and caught on "like wildfire" — with quiet nobility, innate dignity, and profound grace.</p>
+      <p class="text-ink-soft leading-relaxed mb-4">Okatakyie Sir Charles Ofori-Kuragu was a distinguished leader, entrepreneur, devoted family man, and faithful servant of God whose life was defined by excellence, integrity, and service to humanity. The fourth of twelve children born to the late Mr. Daniel Akwasi Ofori-Kuragu and Madam Ama Kwaah, he carried his name — given by Mr. Leslie Mensah and caught on "like wildfire" — with quiet nobility, innate dignity, and profound grace.</p>
       <p class="text-ink-soft leading-relaxed mb-4">From the classrooms of Tetrem and Opoku Ware School to KNUST, DePaul University in Chicago, the boardrooms of AT&amp;T, and the halls of the Kofi Annan Centre of Excellence in ICT, Sir Charles built institutions and people with equal care. He co-founded ICON360 and Build2Last, helped lead St. Georges International School, served as Financial Secretary of Christ's Oasis Ministries, and championed education for the less privileged.</p>
       <p class="text-ink-soft leading-relaxed mb-6">A natural peacemaker and unifier — fondly called the "Prime Minister" of Oasis, "Alhaji" by his schoolmates, and "Mr. Responsible" by his beloved wife — he approached every situation with fairness, patience, and discernment. His legacy lives on in the House of Dominion, the businesses he built, and the countless lives he touched.</p>
       <div class="grid grid-cols-3 gap-4 text-center">
-        <div class="bg-white rounded-xl p-4 shadow-sm border border-gold/20"><p class="display-font text-2xl md:text-3xl font-semibold text-gold-dark">61</p><p class="text-xs uppercase tracking-wider text-ink-soft mt-1">Years of Life</p></div>
-        <div class="bg-white rounded-xl p-4 shadow-sm border border-gold/20"><p class="display-font text-2xl md:text-3xl font-semibold text-gold-dark">4</p><p class="text-xs uppercase tracking-wider text-ink-soft mt-1">Children</p></div>
-        <div class="bg-white rounded-xl p-4 shadow-sm border border-gold/20"><p class="display-font text-2xl md:text-3xl font-semibold text-gold-dark">12</p><p class="text-xs uppercase tracking-wider text-ink-soft mt-1">Siblings</p></div>
+        <div class="bg-white rounded-xl p-4 shadow-sm border border-gold/20"><p class="display-font text-2xl md:text-3xl font-semibold text-gold-dark">62</p><p class="text-xs uppercase tracking-wider text-ink-soft mt-1">Years of Life</p></div>
+        <!--<div class="bg-white rounded-xl p-4 shadow-sm border border-gold/20"><p class="display-font text-2xl md:text-3xl font-semibold text-gold-dark">4</p><p class="text-xs uppercase tracking-wider text-ink-soft mt-1">Children</p></div>-->
+        <!--<div class="bg-white rounded-xl p-4 shadow-sm border border-gold/20"><p class="display-font text-2xl md:text-3xl font-semibold text-gold-dark">12</p><p class="text-xs uppercase tracking-wider text-ink-soft mt-1">Siblings</p></div>-->
       </div>
     </div>
   </div>
@@ -170,7 +183,7 @@ tailwind.config = {
     <div class="relative border-l-2 border-gold/40 ml-4 md:ml-8 space-y-10 pl-8 md:pl-12">
       <div class="relative"><span class="absolute -left-[41px] md:-left-[57px] top-1 w-4 h-4 rounded-full bg-gold ring-4 ring-gold/20"></span>
         <p class="text-gold-dark font-semibold text-sm">1964</p><h3 class="font-serif text-xl font-semibold">A Star is Born</h3>
-        <p class="text-ink-soft text-sm mt-1">Born on March 31st — the fourth of twelve children, and the first son of Daniel Akwasi Ofori Kuragu and Madam Ama Kwaah.</p></div>
+        <p class="text-ink-soft text-sm mt-1">Born on March 31st — the fourth of twelve children, and the first son of Daniel Akwasi Ofori-Kuragu and Madam Ama Kwaah.</p></div>
       <div class="relative"><span class="absolute -left-[41px] md:-left-[57px] top-1 w-4 h-4 rounded-full bg-gold ring-4 ring-gold/20"></span>
         <p class="text-gold-dark font-semibold text-sm">1983 – 1985</p><h3 class="font-serif text-xl font-semibold">Foundations of Learning</h3>
         <p class="text-ink-soft text-sm mt-1">Completed secondary education at Tetrem Secondary School (1983), then sixth form at Opoku Ware Secondary School, OWASS (1985).</p></div>
@@ -191,7 +204,7 @@ tailwind.config = {
         <p class="text-ink-soft text-sm mt-1">Returned to Ghana as the first Director of Finance &amp; Administration of the Kofi Annan Centre of Excellence in ICT — also serving as acting CEO in its formative years.</p></div>
       <div class="relative"><span class="absolute -left-[41px] md:-left-[57px] top-1 w-4 h-4 rounded-full bg-gold ring-4 ring-gold/20"></span>
         <p class="text-gold-dark font-semibold text-sm">2000s – 2020s</p><h3 class="font-serif text-xl font-semibold">The Visionary Entrepreneur</h3>
-        <p class="text-ink-soft text-sm mt-1">Co-owned ICON360 (telecom) and Build2Last (construction) with Opanin Kwaku Oware Banin, and co-managed St. Georges International School, Kumasi, with his wife.</p></div>
+        <p class="text-ink-soft text-sm mt-1">Co-owned ICON360 (telecom) and Build2Last (construction) with Opanin Kwaku Oware Baning, and co-managed St. Georges International School, Kumasi, with his wife.</p></div>
       <div class="relative"><span class="absolute -left-[41px] md:-left-[57px] top-1 w-4 h-4 rounded-full bg-gold ring-4 ring-gold/20"></span>
         <p class="text-gold-dark font-semibold text-sm">2026</p><h3 class="font-serif text-xl font-semibold">Called Home</h3>
         <p class="text-ink-soft text-sm mt-1">After seven weeks of illness — surrounded by his wife, family, and prayer — Sir Charles departed peacefully to be with the Lord, in February 2026.</p></div>
@@ -226,7 +239,7 @@ tailwind.config = {
 <section id="page-family" class="page py-12 md:py-16">
   <div class="text-center mb-12">
     <p class="text-xs tracking-[.35em] uppercase text-gold-dark mb-2">Roots &amp; Branches</p>
-    <h1 class="display-font text-4xl md:text-5xl font-semibold">The Ofori Kuragu Family Lineage</h1>
+    <h1 class="display-font text-4xl md:text-5xl font-semibold">The Ofori-Kuragu Family Lineage</h1>
     <div class="gold-rule w-40 mx-auto mt-6"></div>
   </div>
 
@@ -234,7 +247,7 @@ tailwind.config = {
   <div class="flex flex-wrap justify-center gap-6 mb-2">
     <div class="tree-node bg-white rounded-2xl p-6 w-64 text-center border border-gold/25 shadow-sm">
       <div class="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-gold-light to-gold flex items-center justify-center text-white font-serif text-2xl mb-3">DO</div>
-      <h3 class="font-serif font-semibold text-lg">Mr. Daniel Akwasi Ofori Kuragu</h3>
+      <h3 class="font-serif font-semibold text-lg">Mr. Daniel Akwasi Ofori-Kuragu</h3>
       <p class="text-xs text-ink-soft">Late · d. 2000</p><p class="text-sm text-ink-soft mt-1 italic">Patriarch &amp; Father</p>
     </div>
     <div class="tree-node bg-white rounded-2xl p-6 w-64 text-center border border-gold/25 shadow-sm">
@@ -250,7 +263,7 @@ tailwind.config = {
   <div class="flex flex-wrap justify-center gap-6">
     <div class="tree-node bg-white rounded-2xl p-6 w-64 text-center border-2 border-gold shadow-md">
       <div class="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-gold to-gold-dark flex items-center justify-center text-white font-serif text-2xl mb-3"><img class = "w-20 h-20 rounded-full" src="img/photo 25-page-001.png" /></div>
-      <h3 class="font-serif font-semibold text-lg">Okatakyie Sir Charles Ofori Kuragu <span class="text-gold-dark">✝</span></h3>
+      <h3 class="font-serif font-semibold text-lg">Okatakyie Sir Charles Ofori-Kuragu <span class="text-gold-dark">✝</span></h3>
       <p class="text-xs text-ink-soft">March 31, 1964 – February 2026</p><p class="text-sm text-ink-soft mt-1 italic">"Kofi Duro" · "Alhaji" · "Sir Charles"</p>
     </div>
     <div class="tree-node bg-white rounded-2xl p-6 w-64 text-center border border-gold/25 shadow-sm">
@@ -293,6 +306,7 @@ tailwind.config = {
     <p class="text-xs tracking-[.35em] uppercase text-gold-dark mb-2">Words From the Heart</p>
     <h1 class="display-font text-4xl md:text-5xl font-semibold">Remembrance &amp; Tributes</h1>
     <div class="gold-rule w-40 mx-auto mt-6"></div>
+    <p class="text-sm text-ink-soft mt-4 italic max-w-2xl mx-auto">The full tributes as written in the funeral programme. Tap <span class="text-gold-dark font-medium">Read More</span> on any card to read a tribute in full.</p>
   </div>
 
   <div class="bg-white rounded-2xl border border-gold/25 shadow-sm p-6 md:p-8 mb-12">
@@ -317,7 +331,7 @@ tailwind.config = {
     <h2 class="font-serif text-2xl font-semibold">Tributes <span id="tributeCount" class="text-gold-dark text-lg"></span></h2>
     <span id="candleCount" class="text-sm text-ink-soft"></span>
   </div>
-  <div id="tributeList" class="grid md:grid-cols-2 gap-6"></div>
+  <div id="tributeList" class="grid md:grid-cols-2 gap-6 items-start"></div>
 </section>
 
 <!-- ══════════════ PAGE: PHOTOS ══════════════ -->
@@ -371,7 +385,7 @@ tailwind.config = {
 <footer class="mt-16 bg-ink text-cream-light/80 text-center py-10">
   <div class="gh-stripe w-24 mx-auto mb-6 rounded-full"></div>
   <div class="w-10 h-10 mx-auto rounded-full bg-gold text-white flex items-center justify-center font-serif mb-3 select-none"><img class = "w-20 rounded-full" src="img/photo 25-page-001.png" /></div>
-  <p class="display-font text-xl text-cream-light mb-1">Okatakyie Sir Charles Ofori Kuragu</p>
+  <p class="display-font text-xl text-cream-light mb-1">Okatakyie Sir Charles Ofori-Kuragu</p>
   <p class="text-xs tracking-[.25em] uppercase text-gold-light mb-3">1964 — 2026 · Da Yie, Nante Yie</p>
   <p class="text-xs">With love, from the Ofori-Kuragu family · Christ's Oasis Ministries · Akatakyie · Tetremman Association</p>
 </footer>
@@ -403,70 +417,671 @@ function showPage(id){
 }
 document.getElementById('mobileBtn').addEventListener('click',()=>document.getElementById('mobileMenu').classList.toggle('hidden'));
 
-/* ── Tributes (summarized from the family's tribute document) ── */
+/* ══════════════════════════════════════════════════════════════
+   TRIBUTES — full text as published in the funeral programme.
+   Each entry's `text` uses blank lines (\n\n) to separate paragraphs.
+   ══════════════════════════════════════════════════════════════ */
 const tributes = [
-  {name:'Mrs. Adwoa Konadu Ofori-Kuragu', relation:'Widow', candle:true, group:'The Widow',
-   text:'My Charlie, my pillar, my everything. From the day you said "I want to marry me" on our KNUST blind date until death do us part — 32 memorable years of love, provision, and friendship. You left so soon, so suddenly, but "the Lord is my refuge and my strength." I will keep the faith, my love. Until we meet again. (Romans 8:38-39; Phil Collins\' "Against All Odds" — our song.)'},
-  {name:'Aaron, Audrey, Chuck & Benjamin', relation:'Children', candle:true, group:'The Children',
-   text:'Daddy, we never imagined saying goodbye so soon. You were our biggest supporter, our teacher, and the pillar of our family — an entrepreneur, a leader, a way maker, a man of God, and most importantly, a father. We will take up the mantle and honour your legacy in everything we say and do. Thank you for being our representation and our blueprint. Da Yie, Agya pa. We love you.'},
-  {name:'His Beloved Siblings', relation:'Siblings', candle:true, group:'The Siblings',
-   text:'When our father passed in 2000, you became both father and brother without hesitation — our backbone and anchor, making sure no one was left behind. The weekend calls, the stories of Agya Ofori with giggles and laughter, are forever on hold. Nante yie, Okatakyie. You fought the good fight and ran your race with honour. Rest well until we meet again.'},
-  {name:'The Nephews & Niece', relation:'Family', candle:false, group:'Extended Family',
-   text:'Wofa pa, you were the light through which so many lights came — the embodiment of the light of the world around you. You left no stone unturned in sacrifice for us. We mourn not as those without hope, for on the day of resurrection we shall meet again. May the angels welcome you to paradise. In heaven, continue to pray for us. Till we meet again.'},
-  {name:'Paa Kwasi', relation:'Family', candle:false, group:'Extended Family',
-   text:'"Paa nie!" — "Wofa nie!" To speak of Uncle Charlie is to speak of the man who shaped my life. My mentor and role model, he never let me settle for mediocrity; whenever I doubted, he saw potential. He was the very definition of family. This is not goodbye — simply until we meet again. Thank you for believing in me. 2 Timothy 4:7.'},
-  {name:'Nana Serwaah Wiafe', relation:'Family', candle:false, group:'Extended Family',
-   text:'In 1993 I gained a big brother — never just a cousin, but my bestie, counselor, career planner, and safe space for 30 years. You were the constant, the one who was proud of me. You fought a good fight, Bra Charles, and kept us all together with your love. I was so blessed to call you my brother. Rest well in the bosom of the Lord. Wa ma me ahumu!'},
-  {name:'Apostle Dr. Isaac Paintsil', relation:'Church', candle:true, group:'Christ\'s Oasis Ministries',
-   text:'My true twin brother, born to a different mother — our hearts knit in the God-kind of love that surpasses knowledge. From the flooded basement "baptism" in Humboldt Park to you being handcuffed in our own Oasis Center, grace always prevailed. You laid unbreakable foundations for what the Lord has accomplished. "Onward to the next assignment!" Cynthia, my family, Oasis, and I will never forget you.'},
-  {name:'Christ\'s Oasis Ministries', relation:'Church', candle:false, group:'Christ\'s Oasis Ministries',
-   text:'Sir Charles was a living sermon and an open prayer — our beloved "Prime Minister." As Financial Secretary and Board member he served without compensation, stewarding the House of Dominion and every Oasis asset with integrity and vision. He loved his family first, loved people genuinely, and bore the fruit of the Spirit abundantly. "Well done, good and faithful servant." The Oasis loves you!!!'},
-  {name:'Opoku Ware Old Students Assoc. (Chicago)', relation:'Schoolmate / Alumni', candle:false, group:'Akatakyie (AC 300)',
-   text:'To Katakyie Sir Charles Ofori Kuragu (AC 300), former President of Akatakyie-Chicago: you were more than a leader — a unifying force and proud son of Opoku Ware School. You led with vision, integrity, kindness, and a genuine concern for others, especially the young alumni. Your race is run, your work is done, and your legacy endures. Da Yie.'},
-  {name:'Opanin Kwaku Oware Banin', relation:'Colleague / Business Partner', candle:false, group:'Friends & Partners',
-   text:'My brother, my business partner, my buddy, my "body-body." You believed success meant nothing without trust, loyalty, and respect. You helped quietly without seeking praise — in a world where many take, you found joy in giving. Unto us an angel was born; unto us a saint was created. Rest peacefully, my brother. Until we meet again. Amen.'},
-  {name:'Gabriel Boateng', relation:'Friend', candle:false, group:'Friends & Partners',
-   text:'We met as teenagers in rival school colours — Prempeh vs. Opoku Ware — but the boy from the rival school became my brother for life. Roommates at 4550 North Twin Towers, colleagues at Knight Ridder, driving Yellow Cab on five dollars an hour with massive dreams. We were supposed to be on the veranda in Community 8 in 2027, watching the sun go down. I miss you, Buddy.'},
-  {name:'Tetremman Association of USA', relation:'Community Member', candle:false, group:'Community',
-   text:'Our beloved Vice President and noble son of Tetrem — a man of purpose and quiet strength who never sought recognition. Through his vision we renovated the local clinic and police station, and the community centre stands as a powerful testimony to his generous spirit. His works remain, his example endures. May Tetrem forever cherish him.'},
-  {name:'Kwadwo Owusu', relation:'Friend', candle:false, group:'Friends & Partners',
-   text:'"No man is an island." We became friends in the Asem vacation classes of \'83/84 — bonded by modest backgrounds and the Ash-Town link, calling each other "Opponent." Chef Oduro was loyal, hardworking, generous, and compassionate, quietly sponsoring the education of the less-privileged. You are loved beyond words and missed beyond measure. Rest easy, Menua pa.'},
-  {name:'The Ninjas', relation:'Friend', candle:false, group:'Friends & Partners',
-   text:'Our friendship began at Republic Hall, KNUST, and carried through every stage of life. You were easy-going, warm-hearted, and the kind of person who went the extra mile. Your greatest passion was education for poor and needy children — a cause you planted like a seed. We never got our gathering at Aki-Ola\'s residence, but your place among us can never be filled. Farewell, our loyal friend.'},
-  {name:'Tony Oppong JSC (Class of \'83 Mates)', relation:'Schoolmate / Alumni', candle:false, group:'Nokwarefo',
-   text:'"Alhaji" — a real friend who stuck closer than a brother. Never once did peer pressure move him; his baby face was almost always radiant with smile, and his sense of humour second to none. We hold to 1 Thessalonians 4:13-14: we do not grieve without hope. This is not goodbye, only a farewell until we meet again. Sleep well, our super friend.'},
-  {name:'Prudence Ughamadu, Sheila Noye & Well-Wishers', relation:'Other', candle:false, group:'Farewell Messages',
-   text:'The embodiment of grace, dignity, and class — impeccably dressed, infinitely wise, a guiding light who invested deeply in the next generation. Thank you for your selfless service to Oasis and the Kingdom. Heaven has gained what earth will dearly miss. Deepest condolences to Maa Adwoa, Aaron, Audrey, Chuck, and Ben. Rest in perfect peace.'},
-  {name:'Isaac Paintsil Jr. & Christabel Koomson', relation:'Church', candle:false, group:'Farewell Messages',
-   text:'"The Big Ike" — I can still hear your calm voice. You were one of my greatest influences in pursuing business, always impeccably dressed in your signature UK suits, pouring into the next generation. You even took time to attend my graduation party with the kindest card. This is earth\'s loss but heaven\'s gain. Rest in perfect peace, Sir.'},
-  {name:'Roland Eble & Joycelin', relation:'Friend', candle:false, group:'Farewell Messages',
-   text:'For nearly 20 years I watched your devotion to God, your boldness for the Kingdom, and your generosity toward people. You were my mentor and safe space. Kofi Duro — you never forgot my birthdays; through you Maame Ama became my mother. Damirifa due. Nyame nfa wo nsie. Till we meet again, sleep well, my dear friend.'},
+
+/* ── THE WIDOW ── */
+{
+  name:'Mrs. Adwoa Konadu Ofori-Kuragu',
+  relation:'Widow / Widower',
+  group:'The Widow',
+  candle:true,
+  text:`"For I am convinced that neither death nor life, neither angels nor demons, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord." — Romans 8:38-39
+
+When at this stage in my life, I found myself without my Charlie, all I kept thinking of was Oh God, what am I going to do? Charlie was my pillar, my everything. I thought my world has been turned upside down and many more such hopeless thoughts, until I remembered this bible verse above.
+
+HOW WE MET: Charlie and I both graduated from the prestigious Kwame Nkrumah University of Science and Technology (KNUST). Through fate, I met Charlie when I was paired with him for a blind date organized by the social club of KNUST. When he was seeing me off after the date, Charlie said the following words to me: "I want to marry you." Though his words rang hollow to me at the time, little did I know that he would stay true to his word and do exactly that. He became a great husband to me and a wonderful father to our four children. When we got married in 1994, I knew in my spirit that he was going to be my husband and my everything until death do us part. But why leave so soon Charlie?
+
+FAMILY LIFE: When we first got married, it took a while for us to conceive, but we knew that God's timing is always the best. In due time, we were blessed with our first pregnancy, a set of twins: Our son Atta Panin (Aaron) and our daughter, Ataa Kakra (Audrey). We were later blessed with two more sons, Charles O-K Jr., and Benjamin Yaw Barima Bonsu. As a husband and dad, Charlie never left us wanting in any way. He always provided for us, was very involved in his children's education and their spiritual life. Charlie made sure that they didn't take for granted the life that we provided for them. He was a very giving person to us, to family and to others. His generosity was to a fault on many occasions as he always put his own needs last.
+
+SIR CHARLES THE PERSON: My husband was the first male child of his parents. The befitting name "Sir Charles" was given to him by Mr. Leslie Mensah, and the name caught on like wildfire. This is because he was honorable, kind in heart, and respected by many. I fondly called him "Mr. Responsible" because the house bills were always paid on time, and he held our fort effortlessly. Sir Charles was not only a remarkable servant in the house of God, but he was also a devoted husband, a guiding father and a strong foundation for the entire family. I was always amazed at Charlie's raw intelligence. He was always the adult in the room and knew when to speak and when to hold off. Charlie was a businessman, but he was also a consistent giver to all — a combination that is hard to find. His life was a blessing to all of us, his presence a covering, his legacy unequalled.
+
+SUDDEN DEPARTURE: Our visits to Ghana overlapped for one blissful week and you told me at Kotoka Airport in Ghana as you saw me off on January 28th, 2026, that "Adwoa, I will see you back in the United States in one month." On your many visits to Ghana for your projects, you always said to me as you left that "I will see you" on such and such a date. Charlie, you have always kept your word. What happened to you this time around? Your departure from this world was without any warning and it will never make sense to me. As I received word of your ailment, I rushed back to Ghana. My love, I stayed at your bedside for seven long weeks. I held your hands and witnessed your struggle. I and many others prayed to God for a miraculous healing. But God and fate had other plans for you. Your loss is profound, my love. One that touches the heart of the home and echoes through its foundation. My gentleman, my Ofori, my Charlie, my Sir Charles, my O-K!!! Our ways are not God's ways and whom are we to question His plans? Man can take away life, but never the soul — that ultimately belongs to God. My life and the lives of our children have forever changed but with God on our side, it shall be well.
+
+WE WILL KEEP THE FAITH: Although my initial reaction was "Charlie was my everything", I also know that "The Lord is my refuge and my strength in times of trouble". Thank you for the past 32 memorable years of being my husband, my pillar, my friend, and my confidant. Thank you for being a good father, the head of our household, and a provider beyond measure. May The Lord find a restful place for you until we meet again, my love. I love you and I miss you.`
+},
+
+/* ── SONG DEDICATION ── */
+{
+  name:'Mrs. Adwoa Konadu Ofori-Kuragu',
+  relation:'Widow / Widower',
+  group:'A Song Dedication',
+  candle:false,
+  text:`DEDICATING THE SONG "AGAINST ALL ODDS" by songwriter Phil Collins.
+
+How can I just let you walk away?
+Just let you leave without a trace?
+When I stand here taking every breath with you ooh,
+Ooh
+You're the only one who really knew me at all
+
+How can you just walk away from me
+When all I can do is watch you leave?
+'Cause we've shared the laughter and the pain
+And even shared the tears
+You're the only one who really knew me at all
+
+So take a look at me now
+Oh, there's just an empty space
+And there's nothing left here to remind me
+Just the memory of your face
+
+Oh, take a look at me now
+Well, there's just an empty space
+And you coming back to me is against the odds
+And that's what I've got to face
+
+I wish I could just make you turn around
+Turn around and see me cry
+There's so much I need to say to you
+So many reasons why
+You're the only one who really knew me at all
+
+So take a look at me now
+Well, there's just an empty space
+And there's nothing left here to remind me
+Just the memory of your face
+
+Now take a look at me now
+There's just an empty space
+But to wait for you, well, that's all I can do
+And that's what I've got to face
+
+Take a good look at me now
+'Cause I'll still be standing here
+And you coming back to me is against all odds
+And that's a chance I've got to take, oh, oh
+Just take a look at me now`
+},
+
+/* ── THE CHILDREN ── */
+{
+  name:'Aaron, Audrey, Chuck & Benjamin',
+  relation:'Child',
+  group:'The Children',
+  candle:true,
+  text:`To our beloved Dad, we never imagined we would be standing here so soon, trying to find the words to say goodbye. Although our hearts are broken, we gather to celebrate a life that was a true blessing to our family and to so many others. You were so much more than just our dad — you were our biggest supporter, teacher, and the pillar of our family. While saying goodbye is one of the hardest things we've ever had to do, we take comfort in the love you gave us and the faith that carried you throughout your life. It is truly difficult to put into words how much you meant to all four of us. While each of us carry so many experiences and memories with you, we stand here united as one.
+
+In the good times and the bad times, we continually give thanks to the Lord. We give thanks because there was a brilliant man named Sir Charles Ofori-Kuragu Sr. We give thanks because God gave us the privilege of being able to know, experience, learn from, and love him. An entrepreneur, a leader, a way maker, a man of God, and most importantly, a father. These were roles that he had in his life, and every single one played its part in defining one of the greatest men that we will ever come to know. We give thanks to the impact that he has had and will forever have on all of our lives. We as his children will take up the mantle and continue to honor our father's legacy in everything that we say and do. We will move forward not bitter and afraid of what's to come, but thankful to have been so blessed to call one of God's greatest gifts to earth, our father. Thank you, daddy, for being our representation and our blueprint. May you rest in perfect peace as you take your place in paradise.
+
+Each of us have our own memories of Dad that we will cherish forever. Dad, when we think of you, we remember the impact you made, the doors you opened, and the love you showed to everyone around you. You were a trailblazer and provided greatly for our church, for our family, and you were always there to guide and support the boys and I. You always took initiative. That's the kind of person you were, you didn't just talk, but acted and your legacy isn't just in the buildings or businesses, it will remain in all of us.
+
+Daddy, your Ama Kwaa misses you so much and not a day goes by that we don't think of you.
+
+While it is still hard to believe you are no longer physically present, we know you are watching over each of us. We love you and we carry you with us every day. Thank you daddy for leading by such a good example. Rest peacefully with the Lord.
+
+Daddy, you touched each of our lives in different ways, but the love and lessons you gave us are something we all share. We find comfort in knowing that you are at peace and watching over us from above. We promise to carry on your legacy with pride. We promise to honor your teachings, to continue what you started, and to live in a way that would make you proud.
+
+Though you are no longer here with us physically, your spirit lives on in our hearts, in our memories, and in the lives of everyone you touched. Your legacy continues through your family, the businesses you built, the people you mentored, and the lessons you left behind. You will be remembered by many as a great person, a great man, a great husband, a great father, and someone whose presence truly made a difference.
+
+Your name, your love, your sacrifices, and your example will never be forgotten. We love you, Daddy, and we will carry you with us for the rest of our lives.
+
+As we look back on the life you lived, we can all say proudly you lived it with God at the forefront and never missed an opportunity to teach us about the goodness of God. Now we'll do no different. Even though losing you is still hard to believe, we will praise and thank the Lord all the same, and carry you with us everywhere we go. We dedicate our lives to your honor and mission of always taking care of the people you love and being a pillar and foundation to not only your family but also community. For all the sacrifices you've made for your Ofori-Kuragu family, please rest in your perfect peace now with our Heavenly Father.
+
+As your children, we will carry your lessons, your values, and your love with us. We will continue to make you proud, to care for one another, and to honor the legacy you worked so hard to build for our family. We know that no amount of words could ever truly say goodbye to you. So instead, we say thank you. Thank you for being our father, for loving us, for believing in us, and for giving us a lifetime of memories that we will treasure forever. Rest peacefully, Dad. You will always be our Agya Pa. We love you, and we will carry you with us for the rest of our lives. Dad, enter into the joy of the Lord and continue to watch over us. Da Yie!`
+},
+
+/* ── THE SIBLINGS ── */
+{
+  name:'His Beloved Siblings',
+  relation:'Sibling',
+  group:'The Siblings',
+  candle:true,
+  text:`When we lost our two sisters within the span of just two — it was one of the most difficult periods of our lives. Yet we were able to endure the pain because you were there, giving us a shoulder to lean on and cry on, and the strength to keep going. When our father passed in 2000, you stepped into the role of both father and brother without hesitation. You became our pillar, our backbone, and our anchor, carrying that responsibility with grace, dignity, and without complaint.
+
+You made sure every one of us was cared for. As you always said, "No one left behind in this family." The growth, success, and well-being of every one of us stand as a testament to the man you were. Yours was a life defined by sacrifice, selflessness, and unconditional love.
+
+Bra Charles, you were a gift to everyone who knew you. Your strength, your steady presence, and your generous heart made room for all of us to grow into who we are today. You loved deeply, gave freely, and lived with a sincerity that left an enduring imprint on our family. We will miss your laughter, your wisdom, the little teasing here and there, and the way you showed up — not only during life's major milestones, but in the countless ordinary moments that mattered just as much.
+
+We had a plan. You gaining your heavenly wings at this time was never part of that plan. We were supposed to stand side by side, caring for Maame Ama until the very end. We were never supposed to be holding Maame Ama as she said goodbye to her beloved Kofi. When did the tide change so drastically that we now find ourselves standing in this deepest valley, holding hands, but not at the right place or the right time?
+
+Ofori-Kuragu Nana Kofi Duro, our hearts are shattered into a million pieces. Perhaps time will help gather the broken pieces together again, but we do not know if they will ever fit and be the same. The weekend calls, filled with stories and tales of our father, Agya Ofori, have been on hold since you became ill and now will be forever. We prayed and longed for the day we would hear your voice again, telling those stories only the way you could with giggles, laughter, and a joy that brought our memories to life, reminding us of the good times we had with our father.
+
+Nante yie, Okatakyie. You fought the good fight. You ran your race with honor. You lived a life worthy of your Maker's applause. We love you. We cherish you. And we hope that, throughout your life, we told you and showed you just how much you meant to us. You will forever be our Bra Charles, our Kofi, our Abrantee.
+
+Fare thee well, our thoughtful, caring, loving, and brave warrior. Though you are gone from our sight, you will never be gone from our hearts. Your legacy lives on in all of us, and your love will continue to guide our family for generations to come.
+
+Rest well until we meet again.`
+},
+
+/* ── NEPHEWS AND NIECE ── */
+{
+  name:'The Nephews & Niece',
+  relation:'Family',
+  group:'Extended Family',
+  candle:false,
+  text:`Dear Sir Charles, this morning we stand before your mortal remains, we are gathered before you as you lie quietly in your casket. Here we are swimming in the pool of a million questions. Sir, we stand here with broken hearts, with minds full of hopelessness, pain and trauma.
+
+For us, the world has become so dark since our light has been put out. We stand before you to face the truism that you are no longer on earth with us. But why? This day brings our hope of waking up one day and being told that your passing on was just a bad dream, to finality.
+
+We cried and poured out our hearts to Yahweh Upstairs for healing mercies when you were unwell. As a people of hope we trusted that you will become well so we could testify of God's goodness and love.
+
+Indeed, heaven had preferred that you who worked so tirelessly for God, Country and especially us should return home in glory to rest so that the evil of this passing space may not corrupt you.
+
+On that fateful day when the call came that you had returned to your Maker, our world came crushing and sooner became darker and darker. But why now? God why? We kept asking. Dear Charles, we kept asking God why he took you from us when you were not done impacting lives. But then will He be God if He answered us? Not at all.
+
+Your presence in our lives inspired us in diverse ways. Your smile warmed our hearts. You were indeed the embodiment of the light of the world around you. You were the light per excellence, for you were light through which came so many lights.
+
+We will forever honor the memories we shared, for your legacy lives on. Wofa pa, we are because you gave your all and yourself so selflessly. You were the strong force that showed us our way in this life. You left no stone unturned in sacrifice for us to make sure we become who you wanted us to become.
+
+In all of these, we trust in the Sovereignty of our God that even in this present reality he who is the giver of life and the taker of same will not disappoint you nor us. We are guided in this sorrowful moment of life by the fact that God's ways are not our ways neither are His thoughts our thoughts.
+
+Therefore, even though we mourn, we do so not as the world does, but as a people with hope in the resurrection. We are also encouraged Dear Charles, that, on that day of the resurrection, we shall meet again to see God face to face and as He really is.
+
+We pray that as you journey to your final resting place, the Angels of God will welcome you to paradise where you will rest peacefully from all the worries of this life. May the earth be lighter for you. In heaven, Uncle, continue to pray for us.
+
+Till we meet again, fare ye well.`
+},
+
+/* ── NEPHEW PAA KWASI ── */
+{
+  name:'Nephew Paa Kwasi',
+  relation:'Family',
+  group:'Extended Family',
+  candle:false,
+  text:`To speak about my Uncle Charlie is to speak about a man who shaped the course of my life.
+
+After graduating from university, Uncle Charlie made the bold decision to move to the United Kingdom. As I grew up, I admired him deeply. He wasn't just my uncle — he was my mentor, my role model, and someone whose footsteps I longed to follow. By God's grace, I was able to do exactly that, and for that, I will always be grateful.
+
+Uncle Charlie never allowed me to settle for mediocrity. He constantly encouraged me to become the very best version of myself. He believed that excellence wasn't something to admire from a distance — it was something to pursue every single day. Whenever I doubted myself, he saw potential. Whenever I became comfortable, he challenged me to aim higher. His belief in me gave me confidence, and his guidance helped shape the man I am today.
+
+To me, Uncle Charlie was the very definition of family. His love for his family knew no limits. He gave of himself so freely, always putting others before himself. He was the kind of man who made everyone feel valued, welcomed, and loved. Anyone who had the privilege of knowing him will testify to the warmth, kindness, and genuine love that radiated from him.
+
+For me, he was and always will be the symbol of love.
+
+Some of my most treasured memories are the simple ones. Every time we spoke, he would greet me with, "Paa nie!" and I would smile and reply, "Wofa nie!" Those words were more than greetings; they were a reminder of the special bond we shared. They are memories I will carry with me for the rest of my life.
+
+Wofa, today our hearts are heavy, but they are also full of gratitude. We thank God for the incredible life you lived, for the countless lives you touched, and for the legacy you leave behind.
+
+The Bible reminds us in 2 Timothy 4:7: "I have fought the good fight, I have finished the race, I have kept the faith."
+
+Those words perfectly describe you. You fought your fight with dignity, you ran your race with purpose, and you kept your faith.
+
+And because of that, we do not grieve without hope. We hold on to God's promise that one day, those who believe in Christ will be reunited.
+
+So Wofa, this is not goodbye.
+
+It is simply... until we meet again.
+
+You will forever have a place in my heart. I will carry your wisdom, your love, your example, and your memory for the rest of my life.
+
+Thank you for believing in me.
+Thank you for loving me.
+Thank you for every lesson, every conversation, and every memory.
+
+I love you, Wofa.
+
+May you rest peacefully in the arms of our Lord until we meet again.`
+},
+
+/* ── NANA SERWAAH WIAFE ── */
+{
+  name:'Nana Serwaah Wiafe',
+  relation:'Family',
+  group:'Extended Family',
+  candle:false,
+  text:`"I have fought the good fight, I have finished the race, I have kept the faith." — 2 Timothy 4:7
+
+This verse is you, Bra Charles. You fought a good fight.
+
+In 1993, I returned home from college and met a young man in my parents' home. My father introduced him as his nephew. Instantly, I gained a big brother. That day was the genesis of our 30-plus year journey.
+
+You were never just a cousin. You were my big brother, my bestie, my counselor, my career planner, my confidant. You were the one who introduced me to the father of my child, the father of my only daughter. And when that marriage failed, you were the shoulder I leaned on. You supported me through that difficult period without judgment, with only love.
+
+That was who you were. You saw the human being in me. You never had a bad word to say about anyone. You were always encouraging, always supporting, always loving. There was not a single issue you didn't have a solution for.
+
+Bra Charles was my safe space. An ever-present fixture in my life for the last 30 years. The constant.
+
+Our last conversation was on February 2nd, the day before I left Ghana. You were supposed to return on February 26th. We had so many plans. When I heard of your illness, I didn't think twice. I traveled back to Ghana to spend four weeks by your bedside, because I knew you would have done the same for me if the situation was reversed.
+
+Now my world feels empty. There is no one to be proud of me like you were proud of me. I am brokenhearted.
+
+Bro, I miss you. I miss our long phone conversations. I miss your teasing, your laughter, your calm voice that made everything okay.
+
+You fought a good fight, Bra Charles. You kept the faith, and you kept us all together with your love.
+
+Thank you for loving me so well for over 30 years. I was so blessed to call you my brother.
+
+Rest well in the bosom of the Lord, my big brother. Until we meet again. May your memory be a blessing to us all. Bra, wa ma me ahumu!!
+
+Menua Papabi — With love, Nana Serwa Wiafe`
+},
+
+/* ── APOSTLE DR. ISAAC PAINTSIL ── */
+{
+  name:'Apostle Dr. Isaac Paintsil',
+  relation:'Church Member',
+  group:"Christ's Oasis Ministries",
+  candle:true,
+  text:`The history of humanity began with a revelation of divine relationships. First, there was the eternal fellowship of the Godhead, Father, Son, and Holy Spirit. Then came the creation of humankind as male and female, culminating in the sacred institution of marriage in the opening chapters of Genesis. From the beginning, God revealed that life was not meant to be lived in isolation. He designed hearts to be joined, destinies to be strengthened, burdens to be shared, and divine assignments to be carried out in covenant love.
+
+My dearest Sir Charles Ofori-Kuragu, I received the singular and most precious gift of a divine relationship when the Lord matched and intricately knit our hearts together. You were an extraordinarily beautiful creation, Sir Charles, a special gift from God given to me in my young adult years, my true twin brother, born to a different mother and separated from me by only a few months. In the fullness of time, the Lord brought our paths together, and our hearts immediately recognized one another.
+
+What made this priceless relationship so beautiful was that it transcended the natural and deeply connected our tripartite beings: spirit, soul, and body. The Church speaks of agape in ancient Greek as the highest form of love, but my dear knighted one, ours went beyond what human language could fully express. It was the God-kind of love, the love of Christ, that the Apostle Paul describes in Ephesians 3:19 as surpassing human understanding and knowledge.
+
+We spoke about this countless times. Some may have thought it was a cliche when we called ourselves twins, but we knew it was true. I loved you absolutely, and I knew the love was mutual. Our relationship grew to the point that we could communicate clearly without words. Sometimes a glance was enough. Sometimes silence carried more meaning than speech. Oftentimes, the burden, the joy, the warning, or the next step was understood before it was explained.
+
+There are also two memories that still make me smile through the tears. One was the day we visited the beautiful facility in Humboldt Park, Illinois, in search of a sanctuary for our beloved Christ's Oasis Ministries. It had rained heavily the previous day, and by the time we arrived, the basement had flooded badly. The place was dark, and normally, you would have taken the lead in such inspections. For one reason or another, however, you made me lead. I literally had a second baptism that day, not in the Jordan, but in a flooded basement, soaked from top to bottom, with my cell phone disabled and the long road back to work still ahead of me. Only you could turn a soaked inspection into a sacred adventure and make it feel as though we were still marching onward with joy.
+
+The second memory could easily have come from a sanctified comedy. I got to the office only a short while afterward, and there you were, immediately letting me know that you had just been arrested and handcuffed by a police officer at our beautiful commercial Oasis Center, a property fully owned by the church, with us as the principal officers. You had gone there to prepare for the day's work, but before you could properly explain yourself, the officer saw you and, through the painful shortcut of suspicion because of our skin color, judged the rightful owner to be the suspect reported. Thankfully, the officer's superiors, who knew us well, were deeply apologetic and quickly pleaded with us not to escalate such an unfortunate situation. Looking back now, only you, Sir Charles, could be arrested in your own building and still leave behind a story that makes us shake our heads, smile, and thank God that grace prevailed over prejudice and embarrassment.
+
+These were not merely funny incidents. They were small windows into the life we shared: faith, love, sacrifice, pressure, misunderstanding, laughter, and an unspoken assurance that somehow God was still leading us onward. My dear Sir, I hold these memories with tenderness. They will remain among the precious treasures of my heart until we meet again.
+
+The beauty of this love was that it knit our hearts and minds together to serve God wholeheartedly and to love His Church completely. Our everything was on the line for the Lord and His people, including our own families. As Keith Green sang, "We pledged ourselves and everything to heaven for the gospel of Jesus Christ." We carried pure joy and confidence into every task the Lord gave us, and we spent all we had to accomplish them. I will always remember the unspeakable joy of completing one assignment after another, including spiritual and natural battles, only to look at each other with deep fulfillment and quietly say, "Onward to the next assignment!"
+
+Our greatest desire in life was to glorify the Lord in all our undertakings and to see everyone, especially His people, do excellently well in life, without even the slightest strings attached. You were genuine, pure, and the real deal. You were a true treasure to me and to everyone you met. Your kind was not rare. You were the only kind our loving Father in heaven created.
+
+No tribute could fully recount the deep bond and love we shared, the many ideas and plans we generated, or the many times we put everything on the line to bring them to life. Cynthia, my family, Oasis, and I will never forget that you laid many unbreakable foundations for what the Lord has accomplished through us and for what many future generations will accomplish.
+
+My dearest Sir, we knew, believed, and confessed that boys are born, men are made, and kings are crowned by the Lord in the fullness of time. I salute you, my true twin brother, fellow minister, co-laborer in the Kingdom of God, and fellow soldier in Christ. You fought the good fight, finished your course, ran the race, and kept the faith. Enjoy your well-deserved rest and your many crowns and treasures in heaven until we meet again on that beautiful shore.
+
+You are dearly missed.
+
+"I love you beyond words, and you will forever remain a seal on my heart."`
+},
+
+/* ── CHRIST'S OASIS MINISTRIES ── */
+{
+  name:"Christ's Oasis Ministries",
+  relation:'Church Member',
+  group:"Christ's Oasis Ministries",
+  candle:false,
+  text:`Though our hearts are heavy with sorrow at the passing of our beloved brother, Charles Ofori-Kuragu, we are equally filled with profound gratitude for the rare gift that his life was among us. Affectionately known as Sir Charles, he bore and reflected that title with quiet nobility, innate dignity, profound grace, and deep honor.
+
+His life was, in every sense, a living sermon and an open prayer — one not loudly proclaimed, but faithfully and consistently demonstrated, leaving an indelible imprint on all who encountered him. For Sir Charles, service was never a mere duty; it was a sacred calling. He labored diligently, often away from the spotlight, guided by the truth that we serve "not with eye-service, as people-pleasers, but as servants of Christ" (Ephesians 6:6).
+
+His commitment to the work of God was not driven by recognition or position but by steadfast, selfless devotion. In the numerous roles he faithfully fulfilled — including his service as a member of the Board of Directors of both Oasis and Shining Stars — he became a pillar of strength and wisdom. He was fondly regarded by some as the "Prime Minister" of Oasis, in recognition of his exceptional ability to harmonize intellectual rigor with deep emotional intelligence, producing clarity, stability, and excellence in all he undertook.
+
+In every assignment, he gave generously of his time, intellect, and energy, never seeking reward or praise. Indeed, he exemplified the words of our Lord Jesus Christ: "The greatest among you shall be your servant" (Matthew 23:11).
+
+Endowed with a disciplined and discerning mind, Sir Charles exercised remarkable financial wisdom and stewardship. He managed the resources entrusted to him with integrity, foresight, and accountability, embodying the principle that "it is required in stewards that one be found faithful" (1 Corinthians 4:2). Through his visionary leadership and careful stewardship, Oasis stands today on a firm and flourishing foundation, well-positioned to advance its mission. The enduring physical and institutional landmarks of Oasis — such as the House of Dominion and others — stand as lasting monuments to his faithful labor, benefiting not only this generation but generations yet unborn.
+
+Remarkably, he rendered this extraordinary service without compensation, pouring himself out freely and wholeheartedly. His reward was never sought in earthly gain, for he rested in the promise that "God is not unjust to forget your work and labor of love which you have shown toward His name, in that you have ministered to the saints" (Hebrews 6:10).
+
+Yet even in his deep devotion to the house of God, Sir Charles never neglected his first ministry — his family. He was a loving and devoted husband to his dear wife, Adwoa, leading his home with gentleness, wisdom, and unwavering faith. As a father, he nurtured, guided, and provided for his four children with care and intentionality. Their lives today bear witness to the strength, values, and example he so faithfully imparted.
+
+What truly set Sir Charles apart was his genuine love for people. The fruit of the Spirit: "love, joy, peace, longsuffering, kindness, goodness, faithfulness, gentleness, self-control" (Galatians 5:22-23) — was abundantly evident in him. He was compassionate and approachable, quick to listen, slow to speak, and always ready with thoughtful counsel. He shared in the joys and milestones of others, gracing countless ceremonies, dedications, and gatherings with his presence and encouragement.
+
+Though he has now departed from this earthly fellowship, his legacy remains powerfully alive in the church he strengthened, the countless lives he touched, and the family he so dearly cherished. We grieve deeply, yet with hope, holding fast to the promise that "to be absent from the body is to be present with the Lord" (2 Corinthians 5:8). We are comforted, knowing that he has finished his race with honor and has kept the faith (2 Timothy 4:7). With hearts both heavy and grateful, we commit his soul into the loving care of our Heavenly Father, confident in the glorious words that surely await him: "Well done, good and faithful servant... enter into the joy of your Lord." (Matthew 25:21)
+
+The Oasis Loves You!!!`
+},
+
+/* ── OPOKU WARE OLD STUDENTS ASSOCIATION ── */
+{
+  name:'Opoku Ware Old Students Association',
+  relation:'Schoolmate / Alumni',
+  group:'Akatakyie (AC 300)',
+  candle:false,
+  text:`To KATAKYIE SIR CHARLES OFORI-KURAGU (AC 300), Former President, Opoku Ware Old Students Association – Chicago Chapter.
+
+Isaiah 57:1 — "The righteous perish, and no one takes it to heart; the devout are taken away, and no one understands that the righteous are taken away to be spared from evil."
+
+It is with profound sorrow and heavy hearts that we pay tribute to our beloved brother, leader, and friend, Katakyie Sir Charles Ofori-Kuragu (AC 300), former President of the Opoku Ware Old Students Association (Akatakyie), Chicago Chapter. Sir Charles was more than a leader; he was a unifying force, a mentor, and a proud son of Opoku Ware School whose dedication to service inspired all who had the privilege of knowing him. Through his wisdom, humility, and unwavering commitment to our association, he strengthened the bonds of brotherhood among old students and tirelessly worked to advance the ideals and traditions that define the Opoku Ware spirit. As President, he led with vision and integrity. His passion for bringing people together, supporting fellow alumni, especially the young, and promoting the welfare of our community left an enduring mark on Akatakyie-Chicago. His leadership was characterized by kindness, respect, and a genuine concern for others. He gave generously of his time, talents, and resources, always placing service above self.
+
+Today, we mourn the loss of a cherished brother whose presence brightened every gathering and whose counsel brought clarity and encouragement. While words cannot fully express the depth of our grief, we find comfort in God's promises and in the remarkable legacy he leaves behind. The Scriptures remind us: "I have fought the good fight, I have finished the race, I have kept the faith." 2 Timothy 4:7. Indeed, Sir Charles fought the good fight. He served faithfully, loved generously, and lived honorably. Though his earthly journey has come to an end, his example will continue to guide and inspire us.
+
+In moments of sorrow, we also hold fast to God's assurance: "The Lord is close to the brokenhearted and saves those who are crushed in spirit." — Psalm 34:18.
+
+As we bid farewell to our dear brother, we celebrate a life of purpose, service, and faith. His memory will forever remain in our hearts, and his contributions to Akatakyie-Chicago will never be forgotten.
+
+On behalf of the Opoku Ware Old Students Association, Chicago Chapter, we extend our deepest condolences to his widow, children, brothers and sisters, friends, classmates, and all who mourn his passing. May God grant us strength during this difficult time and may He welcome Sir Charles into His eternal peace. Rest well, Katakyie Sir Charles Ofori-Kuragu (AC 300). Your race is run, your work is done, and your legacy endures. Da Yie.`
+},
+
+/* ── OPANIN KWAKU OWARE BANING ── */
+{
+  name:'Opanin Kwaku Oware Baning',
+  relation:'Colleague / Business Partner',
+  group:'Friends & Partners',
+  candle:false,
+  text:`"If angels are born through human kindness, and saints are created through the way they live among us, then I can truly say: unto us an angel was born, and unto us a saint was created."
+
+Today, we gather with sorrow in our hearts to honor the life of a remarkable man — my brother, my business partner, my buddy, my confidant, Sir Charles. There are some people who pass through life quietly, and there are others whose presence leaves a permanent mark on the hearts of those around them. Sir Charles was one of those rare people. His life was not measured by wealth or status, but by the love he gave, the lives he touched, and the integrity with which he carried himself every single day.
+
+To me, Sir Charles was more than a friend. He was a brother in every sense of the word. He stood beside me during good times and difficult moments alike. In business, he was dependable, honest, and wise. He believed that success meant nothing if it was not built on trust, loyalty, and respect. He was the kind of partner anyone would pray to have, faithful in commitment, sincere in counsel, and steady in character.
+
+But beyond business, he was my confidant, my companion, my "body-body," as we affectionately say. He was someone I could speak to freely, laugh with genuinely, and lean on without fear of judgment. Some friendships are casual, but others become part of your life's foundation. Sir Charles was part of mine. He was a God-fearing man whose faith was reflected not merely in words, but in actions. He treated people with compassion, humility, and kindness. He had a calm spirit and a generous heart. He believed in helping others quietly, without seeking praise or recognition. In a world where many people are quick to take, Sir Charles found joy in giving. There was something deeply comforting about him. His presence brought peace. His advice brought clarity. His laughter brought warmth. And his loyalty brought strength to everyone privileged enough to know him.
+
+Today, we mourn because we loved him deeply. We mourn because his absence will be felt in conversations, gatherings, business meetings, and the simple, everyday moments where his presence once brought light. Yet even in our grief, we give thanks to God for the gift of his life. We are grateful for the memories, the lessons, the friendship, and the love he shared so freely with us all.
+
+Sir Charles may no longer walk beside us physically, but his legacy will continue to live in our hearts. The values he stood for — faith, loyalty, honesty, kindness, and brotherhood — will remain with us forever.
+
+And so today, with tears in our eyes but gratitude in our hearts, we say farewell to a truly special soul.
+
+Unto us, indeed, an angel was born.
+Unto us, a saint was created.
+
+Rest peacefully, my brother, my friend, my partner.
+
+Until we meet again, may your gentle soul rest in perfect peace.
+
+Amen.`
+},
+
+/* ── GABRIEL BOATENG ── */
+{
+  name:'Gabriel Boateng',
+  relation:'Friend',
+  group:'Friends & Partners',
+  candle:false,
+  text:`We met as teenagers in the 1970s, wearing rival high school colors. I went to Prempeh, and Charlie went to Opoku Ware. Back then, amidst the friendly campus banter and school pride, I never could have imagined that the boy from the rival school would cross the lines of competition to become my brother for life.
+
+Our paths crossed again in college at KNUST in Kumasi, where our casual acquaintance deepened into a foundational friendship. But it was Chicago that truly forged our brotherhood. We became roommates at 4550 North Clarendon, sharing a small space in the Twin Towers. Soon after, we became colleagues at Knightrider, navigating our very first job in America in downtown Chicago.
+
+Those days were defined by the grind. Somewhere between the exhausting, late-night shifts driving Yellow Cab, scraping by on five-dollar-an-hour jobs, and holding onto massive dreams, you stopped being just a friend. You became family. We built our lives from the ground up, side by side. Charles was the kind of man who showed up. When life was heavy, he was there. I stood with him through the painful losses of his father and his mother-in-law.
+
+And when my own father-in-law passed away, Charles and Nana Konadu didn't hesitate — they came to Dallas just to stand with my family and me. That was his essence: compassionate, magnanimous, and deeply generous. He possessed a rare, selfless nature that always prompted him to put the needs of others entirely before his own. He carried that same passion into everything he touched.
+
+Charles was an entrepreneur with remarkable vision and unwavering grit, refusing to back down from a challenge. He was a dedicated family man who fiercely adored his people, and above all, he was a man who loved God and lived his faith out loud every single day. The beautiful bond we built didn't stop with us. It flowed right down into our sons, who both grew up to become Purdue Engineering Boilermakers, carrying on our legacy of hard work and ambition.
+
+And, of course, we kept our connection deeply rooted in Ghana. Our houses sit in the very same neighborhood in Community 8. It was there, during so many precious vacations, that we spent hours laughing, planning, and dreaming about the future. We talked constantly about our semi-retirement, visualizing the year 2027. We were supposed to be sitting right there on the veranda together, watching the sun go down over the place we love. I miss you, Buddy.`
+},
+
+/* ── TETREMMAN ASSOCIATION OF USA ── */
+{
+  name:'Tetremman Association of USA',
+  relation:'Community Member',
+  group:'Community',
+  candle:false,
+  text:`Tetremman Association of USA in solemn remembrance pays tribute to the life of our Vice President Sir Charles Ofori-Kuragu, a beloved son of Tetrem, a distinguished community leader, and a man whose life was marked by uncommon dedication, steadfast commitment, and generous service to others. His passing has left a deep void in the hearts of his family, friends, Tetremman Association of USA, and the entire Tetrem community. Yet even in our grief, we give thanks for a life so honorably lived and for the enduring example he leaves behind.
+
+Sir Charles Ofori-Kuragu was a man of purpose and quiet strength. He did not seek recognition for himself, but devoted his energy to the progress and well-being of his people. He carried the burdens of the community with compassion and sincerity, and he led not merely with words, but with humble action. Those who knew him will remember a man whose heart was open to all, whose counsel was valued, and whose commitment to Tetrem never wavered.
+
+Through his vision and tireless leadership, Sir Charles Ofori-Kuragu brought people together to undertake works that have blessed countless lives. He mobilized citizens in the diaspora to renovate a local clinic, helping to restore dignity to a place of healing and care. He also played a vital role in the renovation of the police station, recognizing the importance of safety, order, and communal responsibility.
+
+These were not merely projects to him; they were expressions of his deep love for Tetrem and his unwavering desire to see the community flourish. Among his many lasting contributions, the building of the community center will stand as a powerful testimony to his generous spirit and unifying influence. It will remain a place where people can gather, share, support one another, and build a better future together. In this way, Sir Charles Ofori-Kuragu continues to speak to us even in death: through every life touched, every gathering held, and every act of unity inspired by the foundation he helped to lay.
+
+Today, as we bid farewell to our brother and Vice President Sir Charles Ofori-Kuragu, we do so with sorrow, but also with profound gratitude. We mourn the loss of a faithful leader, a generous heart, and a true pillar of the Tetrem community.
+
+Though he has departed from our sight, his works remain, his example endures, and his memory will continue to live on in the hearts of all who knew him and in the community he loved so dearly. May the Almighty God grant him eternal rest, and may Tetrem forever cherish the remarkable legacy of this noble son.`
+},
+
+/* ── KWADWO OWUSU ── */
+{
+  name:'Kwadwo Owusu',
+  relation:'Friend',
+  group:'Friends & Partners',
+  candle:false,
+  text:`"No Man Is An Island. The death of any man diminishes me, for I am part of mankind!" (John Donne).
+
+I never in my wildest dream thought I will be called upon to write up a tribute to my dearest brother and friend, Charles Ofori-Kuragu, popularly known as "Sir Charles or Kofi Oduro," anytime soon but here I am being called upon to do exactly the unthinkable.
+
+We became friends in 1983/84 when we were attending sixth form vacation classes at Asem Boys School which was organised by Mr. Magnus (later Prof. Frimpong of KNUST), the Late Mr. Afrifa (Ex-Tutor of OWASS and M.P.) among others.
+
+We became friends maybe due to our modest backgrounds and the "Ash-Town Link" so we used to call each other "Opponent" as that was the then popular term with the Ashtown Youth.
+
+Kofi was friendly and popular in the classes due to his witty comments and little mischievous acts like fee dodging, sometimes sneaking into class through the window with the connivance of Duku-Boamah (Paa Nonfa) who was the collector of the fees for "Computer."
+
+Decent, hardworking, generous, and compassionate — "Chef Oduro," as I used to call him, was regarded by his "Band of Brothers" as simply a loyal, hardworking, respectable person who carried himself with dignity, who was always willing to help when a need arose.
+
+Kofi's course of affecting humanity is the number of persons he touched by his compassion and care and his willingness to help numerous less-privileged by sponsoring their education.
+
+He was a consummate family-oriented person to both his immediate and extended families. In business, he was bold too, venturing into seemingly difficult and huge ventures, making them seem so easy. Your life was a blessing to me specifically and my family.
+
+Kofi, your memory, a treasure to keep. You are loved beyond words and missed beyond measure. The love and memory of you shall never fade.
+
+You are sorely missed. Rest easy, Menua Pa Ne Madamfo Kofi in God's Bosom.`
+},
+
+/* ── THE NINJAS ── */
+{
+  name:'His Loyal Friends — The Ninjas',
+  relation:'Friend',
+  group:'Friends & Partners',
+  candle:false,
+  text:`"Jesus said unto her, I am the resurrection, and the life: he that believeth in me, though he were dead, yet shall he live." — John 11:25 (KJV)
+
+Today, strengthened by this promise of eternal life, we gather with heavy hearts to pay tribute to our dear friend and brother, Sir Charles Ofori-Kuragu. His passing has created a deep emptiness in our hearts — an emptiness that words cannot adequately describe.
+
+Sir Charles was born on 31 March 1964. He began his early education before continuing to Tetrem Secondary School. He later attended Opoku Ware Secondary School (OWASS) for his Sixth Form education. After Sixth Form, he undertook his National Service at the Regional Administration in Kumasi.
+
+Driven by his love for knowledge and his determination to build a meaningful future, Charles gained admission to the University of Science and Technology, where he studied Planning and became a proud member of Republic Hall. It was during his university years that he formed friendships that remained strong throughout his life.
+
+After completing his university education, Charles lived in London for about a year before moving to the United States of America to pursue a master's degree in Administration, majoring in Finance. Through hard work, discipline and determination, he established a successful professional career and worked with AT&T.
+
+Despite building his career abroad, Charles never forgot Ghana or the importance of contributing to the development of his country. He took time away from his work in the United States and returned home to help establish the Kofi Annan Information Technology Centre. He devoted about two years of his life to this important assignment before returning to Chicago, where he later established and managed his own private business until his untimely death.
+
+Sir Charles was easy-going, sociable and pleasant to be around. He enjoyed the company of others and brought happiness wherever he went. He was approachable, warm-hearted and always willing to help. He was the kind of person who would go the extra mile for someone he considered a friend or brother. His kindness was genuine, and his loyalty could always be trusted.
+
+One of his greatest passions was education, particularly education for poor and needy children. He strongly believed that poverty should never prevent a child from receiving a good education. He desired to see less privileged children given opportunities to learn, grow and build better lives for themselves.
+
+This passion led him to encourage one of his loyal friends, Peter Asiedu, author and publisher of the AKI-OLA Series, to establish an educational fund (still in its formative stages) for less privileged children. To Charles, this was more than an idea; it was a cause very close to his heart. He understood that educating a child could transform a family, a community and, ultimately, an entire nation. His concern for disadvantaged children revealed the compassion and generosity within him.
+
+Charles was a cherished member of our small and close-knit group of loyal friends known as Ninjas. Our friendship began during our university days and continued through the different stages of our lives. Although life took us to different places and gave us different responsibilities, the bond we shared remained strong. Charles was not simply a member of the Ninja family; he was our friend, our brother and an important part of our shared history.
+
+We had been planning to meet at Akiola's residence at Mampong for a get-together. We looked forward to sitting together again, sharing food, remembering our university days, laughing over old stories and enjoying one another's company.
+
+We never imagined that the gathering we eagerly anticipated would not take place as planned.
+
+Then came the painful news that Charles had been admitted to the hospital with a serious illness. We hoped and prayed that he would recover and return to us. Sadly, we never had the opportunity to see him alive again. Today, instead of welcoming him to our gathering with smiles and laughter, we have seen his lifeless body laid to rest.
+
+The pain is deep, and the questions are many. We wish we had been given one more opportunity to sit with him, speak with him and tell him how much his friendship meant to us. We wish we could have shared one more meal, heard one more story and enjoyed one more moment of laughter together.
+
+Yet, even in our sorrow, we are grateful for the years we shared with him. We are grateful for his friendship, loyalty, generosity and the many beautiful memories he left behind. We shall remember his easy-going nature, cheerful spirit and willingness to help others. We shall also remember the sacrifices he made and his passion for providing educational opportunities for poor and needy children.
+
+Charles, your place among us can never be filled. Though death has taken you from our sight, it cannot take away the love, friendship and memories we shared. You will continue to live in our hearts and in the lives of all those you touched.
+
+Your journey on Earth has ended, but your good deeds will continue to speak for you. May the seeds of kindness, friendship and educational opportunity that you planted continue to grow and bear fruit.
+
+Farewell, Sir Charles Ofori-Kuragu.
+Farewell, our loyal friend.
+Farewell, our beloved brother.
+
+Rest in eternal peace, Charles.
+
+You will always be remembered by your brothers and friends in the Ninjas family.`
+},
+
+/* ── TONY OPPONG (NOKWAREFO) ── */
+{
+  name:'Tony Oppong JSC — Nokwarefo (Class of \'83 Mates)',
+  relation:'Schoolmate / Alumni',
+  group:'Nokwarefo',
+  candle:false,
+  text:`Alhaji was a real friend. A friend who stuck more than a brother. His friendship was divine. He got along well with anybody who crossed his path. His kind and generous heart was evident to all.
+
+No one can say he ever saw him angry. It's not that he did not get angry sometimes. But the way and manner he would manage his displeasure and anger was such that you could hardly see it expressed on his face.
+
+This is because his baby face was almost always radiant with a smile. He liked laughing and teased a lot. His sense of humour was second to none.
+
+We loved his company particularly because you would not be with him and not feel or experience his superb humanity any more than touching water and not getting wet.
+
+Alhaji's sense of responsibility and discipline was so admirable. In those early days of our boyish lives in the early eighties when we would resort to all sorts of bad habits including drinking and smoking, Charles never succumbed under peer pressure. He stayed distant and never joined nor participated in those boyish skirmishes. No wonder he earned the name "Alhaji."
+
+Charles was full of life and no one could ever imagine that he would pass away so soon and in the unceremonious manner that he departed from this life. His passing away really confirms the hard truths that life is short, uncertain and unpredictable.
+
+We would have loved him to stay with us a little longer so that we could enjoy his company, his laughter and his jokes as well as his distinct way of teasing.
+
+We remember the time you shared with us, especially your 60th glorious birthday get-together you organised for some of us in your house.
+
+Regarding your passing away, we are left with so many unanswered questions, but we can only console ourselves with the word of God expressed in 1 Thessalonians 4:13-14, to wit:
+
+"And now, dear brothers and sisters, we want you to know what will happen to the believers who have died, so you will not grieve like people who have no hope. For since we believe that Jesus died and was raised to life again, we also believe that when Jesus returns, God will bring back with him the believers who have died."
+
+Alhaji, we believe you will be raised to life again since we have no doubt in your faith in Jesus Christ. Consequently, we hold on to the hope that this is not goodbye, but only a farewell until we meet again. Sleep well, Alhaji, our super friend. You will forever be in our hearts.`
+},
+
+/* ── FAREWELL MESSAGE: ANONYMOUS WELL-WISHER ── */
+{
+  name:'A Cherished Well-Wisher',
+  relation:'Other',
+  group:'Farewell Messages',
+  candle:false,
+  text:`Fare Thee Well, Sir Charles
+
+Sir Charles was the embodiment of grace, dignity, and class. Impeccably dressed and infinitely wise, he carried himself with a quiet authority that inspired everyone around him. To many, he was a guiding light — a man of high caliber whose business acumen and professional excellence set a standard for generations to follow.
+
+A devoted servant of God and a natural unifier, Sir Charles lived a life of tangible faith and generosity. He invested deeply in the next generation, always offering the right counsel at the perfect time. While his passing is a profound loss, we take comfort in knowing that heaven has gained what earth will dearly miss.
+
+Our deepest condolences are with Maa Adwoa, Aaron, Audrey, Chuck, and Ben. May you find strength in the remarkable foundation he built.
+
+Rest in perfect peace, Sir Charles. Your legacy remains untouched by time.`
+},
+
+/* ── PRUDENCE UGHAMADU ── */
+{
+  name:'Prudence Ughamadu',
+  relation:'Other',
+  group:'Farewell Messages',
+  candle:false,
+  text:`Sir Charles, I was deeply shocked and saddened to hear of your passing. Your humility and gentle presence were evident to many, and your memory will continue to live on in the hearts of those whose lives you touched. Praying that God comforts and strengthens your family and loved ones during this difficult time. May they find peace in knowing that you have joined that great cloud of witnesses, cheering us on as we continue our journey of faith. May your soul rest in perfect peace.`
+},
+
+/* ── SHEILA NOYE ── */
+{
+  name:'Sheila Noye',
+  relation:'Church Member',
+  group:'Farewell Messages',
+  candle:false,
+  text:`Sir Charles, it is still difficult to come to terms with the news of your transition into eternity. Yet, we trust in God's sovereignty and humbly submit to His perfect will without questioning Him. Thank you for your selfless service to Oasis and to the Kingdom of God. It was truly a blessing and privilege to know you and to glean from your wealth of wisdom and experience.
+
+May your good works follow you as you receive the crown you so richly deserve. May your soul rest peacefully in the bosom of your Creator.
+
+Our heartfelt condolences go to our dear Sister Adwoa, the children, and the entire family. May the Lord comfort you all.`
+},
+
+/* ── ISAAC PAINTSIL JR ── */
+{
+  name:'Isaac Paintsil Jr.',
+  relation:'Church Member',
+  group:'Farewell Messages',
+  candle:false,
+  text:`Sir Charles... Sir Charles.
+
+It's been just over a week, and I can still hear your calm voice calling me "The Big Ike," just as you have since I was young. To know you was to love you. No one carried the title Sir with the same grace, dignity, and ease that you did. You were a man of aura, class, and sophistication — always impeccably dressed, your signature UK suits reflecting the excellence you embodied. You were one of my greatest influences in pursuing business, both in college and as a career. You consistently encouraged me, challenged me, and offered the right counsel at the right time.
+
+A God-fearing man, your love for the Lord was evident in your life: in your fruit, your generosity, and the genuine care you showed to others. It was truly an honor to serve in God's Kingdom alongside you.
+
+You were a unifier, a man who brought people together. A man who operated at the highest level — your business acumen is difficult to fully put into words. And beyond all your achievements, you were deeply invested in the next generation.
+
+This has been the hardest loss I've experienced in my life. Yet as a child of God, I take comfort in knowing this is earth's loss but heaven's gain.
+
+My deepest condolences to my brothers and sisters Aaron, Audrey, Chuck, Ben, and Maa Adwoa. The Lord is your keeper, and the Lord is your strength. Rest in perfect peace, Sir.`
+},
+
+/* ── ROLAND EBLE ── */
+{
+  name:'Roland Eble',
+  relation:'Church Member',
+  group:'Farewell Messages',
+  candle:false,
+  text:`In Loving Memory of Dearest Sir Charles,
+
+With a heavy heart and deep gratitude, I honor your life Sir Charles — my mentor, big brother, and a true leader in the faith. For nearly 20 years, I have been blessed to know you and to witness the strength of your character, your acumen, and the sincerity of your devotion to God with all your skills.
+
+You were a man of faith who stood boldly for the interest of the Kingdom — always! You carried that same courage and conviction into every room for the well-being of the church, the body of Christ. Yet what set you apart most was your generosity: you also made time to pour into people, and you poured a lot into me. I appreciate your feedback as a mentor on my few ideas and how you always found time for anything I brought to you.
+
+I'm especially grateful for the privilege of serving with you at the Oasis. I learned from your boldness, consistency, and willingness to lead in truth and love.
+
+"Well done, good and faithful servant. Enter into the joy of your Lord." (Matthew 25:21)
+
+Thank you, Sir Charles, for always believing in me, encouraging me, for leading many of us with faith, and for showing us what it looks like to stand for the Kingdom without compromise. Your legacy lives on and I will forever be grateful. Rest in peace Sir!`
+},
+
+/* ── CHRISTABEL KOOMSON ── */
+{
+  name:'Christabel Koomson',
+  relation:'Church Member',
+  group:'Farewell Messages',
+  candle:false,
+  text:`Sir Charles took the time out of his day to attend my graduation party and brought me the kindest card and a generous gift from himself and his family.`
+},
+
+/* ── JOYCELIN ── */
+{
+  name:'Joycelin ("Araba")',
+  relation:'Family',
+  group:'Farewell Messages',
+  candle:false,
+  text:`TRIBUTE TO CHARLES OFORI-KURAGU (KOFI DURO)
+
+"The day Thou gavest, Lord, is ended,
+The darkness falls at Thy behest;
+To Thee our morning hymns ascended,
+Thy praise shall hallow now our rest."
+
+I have known Charles since 1979. I called him Kofi Duro, whilst he called me Araba. Through him, Maame Ama became my mother, and I became her adopted daughter. He never forgot my birthdays. Kofi remained the same throughout the years; he never changed his character and attitude towards me.
+
+Kofi, thank you for all the goodness and kindness you showed towards my late mother, Nana Agyeman, Nana Yaw and Maame. We all say thank you. I am grateful for your kind heart and for the kindness you showed me, my family, and my loved ones. You touched so many lives with your generosity, warmth, and goodness. Your departure is a big loss to us but God knows best. We will carry your memories in our heart forever.
+
+Kofi Duro.
+Damirifa Due.
+Nyame nfa wo nsie.
+
+Till we meet again, sleep well.
+Da yie dofo pa.
+
+Rest peacefully, my dear friend. You will never be forgotten.`
+}
+
 ];
+
+/* ══════════════════════════════════════════════════════════════
+   TRIBUTE RENDERING
+   ══════════════════════════════════════════════════════════════ */
 let candlesLit = tributes.filter(t=>t.candle).length;
-const relIcons = {Family:'❤️','Widow / Widower':'💛',Child:'👨‍👧',Sibling:'🤝',Friend:'🌹',Church:'⛪','Colleague / Business Partner':'💼','Schoolmate / Alumni':'🎓','Community Member':'🏘️',Other:'🕊️'};
+const relIcons = {
+  'Family':'❤️','Widow / Widower':'💛','Child':'👨‍👧','Sibling':'🤝',
+  'Friend':'🌹','Church Member':'⛪','Colleague / Business Partner':'💼',
+  'Schoolmate / Alumni':'🎓','Community Member':'🏘️','Other':'🕊️'
+};
+const COLLAPSE_THRESHOLD = 320; // characters before a "Read More" button appears
 
 function renderTributes(){
   const list = document.getElementById('tributeList');
-  list.innerHTML = tributes.map(t=>`
+  list.innerHTML = tributes.map((t, idx)=>{
+    const initials = t.name.split(' ').filter(w=>/[A-Za-z]/.test(w[0]))
+                        .map(w=>w[0]).slice(0,2).join('').toUpperCase();
+    const paragraphs = t.text.split('\n\n').map(p=>`<p>${p}</p>`).join('');
+    const needsToggle = t.text.length > COLLAPSE_THRESHOLD;
+    const collapsedClass = needsToggle ? 'collapsed' : '';
+
+    return `
     <div class="tribute-card bg-white rounded-2xl border border-gold/25 shadow-sm p-6 flex flex-col">
       <div class="flex items-center gap-3 mb-3">
-        <div class="w-11 h-11 rounded-full bg-gradient-to-br from-gold-light to-gold flex items-center justify-center text-white font-serif shrink-0">${t.name.split(' ').filter(w=>/[A-Za-z]/.test(w[0])).map(w=>w[0]).slice(0,2).join('').toUpperCase()}</div>
+        <div class="w-11 h-11 rounded-full bg-gradient-to-br from-gold-light to-gold flex items-center justify-center text-white font-serif shrink-0">${initials}</div>
         <div>
           <p class="font-semibold text-sm">${t.name} ${t.candle?'<span title="Candle lit">🕯️</span>':''}</p>
           <p class="text-xs text-gold-dark">${relIcons[t.relation]||'🌹'} ${t.group} · ${t.relation}</p>
         </div>
       </div>
-      <p class="text-sm text-ink-soft leading-relaxed flex-1 display-font text-[17px]">"${t.text}"</p>
-    </div>`).join('');
+      <div class="tribute-text display-font text-[17px] text-ink-soft leading-relaxed flex-1 ${collapsedClass}" id="ttext-${idx}">
+        ${paragraphs}
+      </div>
+      ${needsToggle ? `<button type="button" class="read-more-btn mt-3 self-start text-sm font-semibold text-gold-dark underline decoration-gold/40 underline-offset-4" onclick="toggleTribute(${idx}, this)">Read More</button>` : ''}
+    </div>`;
+  }).join('');
   document.getElementById('tributeCount').textContent = `(${tributes.length})`;
   document.getElementById('candleCount').textContent = `🕯️ ${candlesLit} candle${candlesLit===1?'':'s'} lit`;
 }
+
+function toggleTribute(idx, btn){
+  const body = document.getElementById('ttext-'+idx);
+  if(!body) return;
+  const isCollapsed = body.classList.toggle('collapsed');
+  btn.textContent = isCollapsed ? 'Read More' : 'Read Less';
+  if(!isCollapsed){
+    // keep the expanded card in view
+    body.scrollIntoView({behavior:'smooth', block:'nearest'});
+  }
+}
+
 document.getElementById('tributeForm').addEventListener('submit', e=>{
   e.preventDefault();
   const candle = document.getElementById('tCandle').checked;
-  tributes.unshift({name:document.getElementById('tName').value.trim(), relation:document.getElementById('tRelation').value, text:document.getElementById('tMessage').value.trim(), candle, group:'New Tributes'});
+  tributes.unshift({
+    name: document.getElementById('tName').value.trim(),
+    relation: document.getElementById('tRelation').value,
+    text: document.getElementById('tMessage').value.trim(),
+    candle,
+    group: 'New Tributes'
+  });
   if(candle) candlesLit++;
-  renderTributes(); e.target.reset();
+  renderTributes();
+  e.target.reset();
   document.getElementById('tributeList').scrollIntoView({behavior:'smooth', block:'start'});
 });
 
@@ -475,11 +1090,25 @@ const photos = [
   {label:'Daddy and Wife', year:'memory', src:'img/photo 2-page-001.png'},{label:'Daddy and Son', year:'memory', src:'img/photo children 7-page-001.png'},
   {label:'Daddy and Son', year:'memory', src:'img/photo children 8.jpg'},{label:'Daddy and Son', year:'memory',src:'img/photo children 9.jpg'},
   {label:'Daddy and Son', year:'memory', src:'img/photo children 6-page-001.png'},{label:'Daddy and Son', year:'memory', src:'img/photo children 2-page-001.png'},
-  {label:'Daddy and Son', year:'memory', src:'img/photo children 3-page-001.png'},{label:'Daddy and Daugther', year:'memory', src:'img/photo children 4-page-001.png'},
+  {label:'Daddy and Son', year:'memory', src:'img/photo children 3-page-001.png'},{label:'Daddy and Daughter', year:'memory', src:'img/photo children 4-page-001.png'},
   {label:'Daddy and Friends', year:'memory', src:'img/photo 8-page-001.png'},{label:'Daddy and Friend', year:'memory', src:'img/photo 40-page-001.png'},
-  {label:'Loved ones', year:'memory', src:'img/photo 41-page-001.png'},{label:'Daddy visit graduation', year:'memory', src:'img/photo 42-page-001.png'},
+  {label:'Loved ones', year:'memory', src:'img/photo 41-page-001.png'},{label:'Daddy at graduation', year:'memory', src:'img/photo 42-page-001.png'},
   {label:'Loved ones', year:'memory', src:'img/photo 10-page-001.png'},{label:'Daddy and son', year:'memory', src:'img/photo 7-page-001.png'},
   {label:'Loved ones', year:'memory', src:'img/photo 21-page-001.png'},{label:'Loved ones', year:'memory', src:'img/photo 27-page-001.png'},
+  {label:'Loved ones', year:'memory', src:'img/photo 3-page-001.png'},{label:'Loved ones', year:'memory', src:'img/photo 4-page-001.png'},
+  {label:'Loved ones', year:'memory', src:'img/photo 9-page-001.png'},{label:'Loved ones', year:'memory', src:'img/photo 11-page-001.png'},
+  {label:'Loved ones', year:'memory', src:'img/photo 12-page-001.png'},{label:'Loved ones', year:'memory', src:'img/photo 13-page-001.png'},
+  {label:'Loved ones', year:'memory', src:'img/photo 14-page-001.png'},{label:'Loved ones', year:'memory', src:'img/photo 15-page-001.png'},
+  {label:'Loved ones', year:'memory', src:'img/photo 16-page-001.png'},{label:'Loved ones', year:'memory', src:'img/photo 19-page-001.png'},
+  {label:'Loved ones', year:'memory', src:'img/photo 20-page-001.png'},{label:'Daddy', year:'memory', src:'img/photo 22-page-001.png'},
+  {label:'Daddy and Daughter', year:'memory', src:'img/photo 23-page-001.png'},{label:'Loved ones', year:'memory', src:'img/photo 24-page-001.png'},
+  {label:'Daddy', year:'memory', src:'img/photo 25-page-001.png'},{label:'Loved ones', year:'memory', src:'img/photo 26-page-001.png'},
+  {label:'Loved ones', year:'memory', src:'img/photo 28-page-001.png'},{label:'Daddy and Daughter', year:'memory', src:'img/photo 30-page-001.png'},
+  {label:'Loved ones', year:'memory', src:'img/photo 32-page-001.png'},{label:'Daddy and Daughter', year:'memory', src:'img/photo 33-page-001.png'},
+  {label:'Loved ones', year:'memory', src:'img/photo 34-page-001.png'},{label:'Daddy and Mum', year:'memory', src:'img/photo 35-page-001.png'},
+  {label:'Dad with Mom', year:'memory', src:'img/photo 36-page-001.png'},{label:'Loved ones', year:'memory', src:'img/photo 37-page-001.png'},
+  {label:'Loved ones', year:'memory', src:'img/photo 38-page-001.png'},{label:'Loved ones', year:'memory', src:'img/photo 39-page-001.png'},
+  {label:'Daddy with son', year:'memory', src:'img/photo children 10.jpg'},{label:'Daddy with son', year:'memory', src:'img/photo children-page-001.png'},
 ];
 function renderPhotos(){
   document.getElementById('photoGrid').innerHTML = photos.map((p,i)=>{
@@ -524,7 +1153,7 @@ const videos = [
   {title:'Funeral Service Live Recording', dur:'1:24:10', embed:'https://www.youtube.com/embed/dQw4w9WgXcQ'},
   {title:'Celebration of Life Highlights', dur:'08:32', embed:'https://www.youtube.com/embed/dQw4w9WgXcQ'},
   {title:'Family Memories Montage', dur:'05:47', embed:'https://www.youtube.com/embed/dQw4w9WgXcQ'},
-  {title:'Tribute from Christ\'s Oasis Ministries', dur:'12:03', embed:'https://www.youtube.com/embed/dQw4w9WgXcQ'},
+  {title:"Tribute from Christ's Oasis Ministries", dur:'12:03', embed:'https://www.youtube.com/embed/dQw4w9WgXcQ'},
   {title:'60th Birthday Celebration Speech', dur:'15:22', embed:'https://www.youtube.com/embed/dQw4w9WgXcQ'},
   {title:'Interview: His Life & Legacy', dur:'22:15', embed:'https://www.youtube.com/embed/dQw4w9WgXcQ'},
 ];
@@ -562,7 +1191,7 @@ const accounts = [
   {bank:'Mobile Money (Ghana)', name:'Family MoMo Line', number:'+233 00 000 0000', note:'Quick mobile contributions', icon:'📱'},
   {bank:'Zelle / Cash App (Diaspora)', name:'Family tribute email', number:'family@example.com', note:'Diaspora contributions', icon:'✉️'},
   {bank:'Sir Charles Educational Fund', name:'In fulfilment of his dream for less-privileged children', number:'0000000000', note:'A cause very close to his heart', icon:'🎓'},
-  {bank:'Christ\'s Oasis Ministries', name:'In honour of his service to God\'s house', number:'0000000000', note:'House of Dominion & ministry projects', icon:'⛪'},
+  {bank:"Christ's Oasis Ministries", name:"In honour of his service to God's house", number:'0000000000', note:'House of Dominion & ministry projects', icon:'⛪'},
 ];
 function renderDonations(){
   document.getElementById('donationGrid').innerHTML = accounts.map(a=>`
